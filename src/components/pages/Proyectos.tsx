@@ -94,7 +94,7 @@ const proyectos = [
           <CardContainer>
             <CardItem translateZ={100}>
           <img
-            src="/images/techs.png"
+            src="/images/tech.png"
             alt="Portfolio preview"
             height="300"
             width="300"
