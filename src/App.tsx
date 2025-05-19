@@ -66,21 +66,21 @@ function App() {
                 <>
                   <HomePage />
                   <div className="flex flex-col md:flex-row gap-4 mb-12 animate-fade-in [animation-delay:300ms]">
-                    <Link to="/estudios" aria-label="Go to Studies">
+                    <Link to="/studies" aria-label="Go to Studies">
                       <InteractiveHoverButton>Studies</InteractiveHoverButton>
                     </Link>
-                    <Link to="/tecnologias" aria-label="Go to Technologies">
+                    <Link to="/technologies" aria-label="Go to Technologies">
                       <InteractiveHoverButton>Technologies</InteractiveHoverButton>
                     </Link>
-                    <Link to="/proyectos" aria-label="Go to Projects">
+                    <Link to="/projects" aria-label="Go to Projects">
                       <InteractiveHoverButton>Projects</InteractiveHoverButton>
                     </Link>
                   </div>
                 </>
               } />
-              <Route path="/estudios" element={<Estudios />} />
-              <Route path="/tecnologias" element={<Tecnologias />} />
-              <Route path="/proyectos" element={<Proyectos />} />
+              <Route path="/studies" element={<Estudios />} />
+              <Route path="/technologies" element={<Tecnologias />} />
+              <Route path="/projects" element={<Proyectos />} />
             </Routes>
           </div>
         </div>
