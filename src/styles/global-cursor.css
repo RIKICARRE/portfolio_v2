@@ -1,0 +1,4 @@
+/* Fuerza el cursor nativo a ocultarse en todos los elementos, incluidos interactivos */
+html, body, *, *:hover, *:active, *:focus {
+  cursor: none !important;
+}
