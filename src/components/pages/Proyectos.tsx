@@ -13,12 +13,12 @@ import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import { RainbowButton } from "@/components/magicui/rainbow-button";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 import { ShineBorder } from "@/components/magicui/shine-border";
-import { CardContainer, CardItem } from "../ui/3d-card";
+import { CardContainer, CardItem } from "@/components/ui/3d-card";
 
 // Estructura de proyectos escalable
 const proyectos = [
   {
-    src: "src/assets/images/portfolio.png",
+    src: "/images/portfolio.png",
     title: "Portfolio Web",
     category: "Frontend",
     content: (
@@ -40,7 +40,7 @@ const proyectos = [
           <CardContainer>
             <CardItem translateZ={100}>
           <img
-            src="src/assets/images/portfolio.png"
+            src="/images/portfolio.png"
             alt="Portfolio preview"
             height="300"
             width="300"
@@ -58,7 +58,7 @@ const proyectos = [
           <CardContainer>
             <CardItem translateZ={100}>
           <img
-            src="src/assets/images/studies.png"
+            src="/images/studies.png"
             alt="Portfolio preview"
             height="300"
             width="300"
@@ -76,7 +76,7 @@ const proyectos = [
           <CardContainer>
             <CardItem translateZ={100}>
           <img
-            src="src/assets/images/projects.png"
+            src="/images/projects.png"
             alt="Portfolio preview"
             height="300"
             width="300"
@@ -94,7 +94,7 @@ const proyectos = [
           <CardContainer>
             <CardItem translateZ={100}>
           <img
-            src="src/assets/images/tech.png"
+            src="/images/techs.png"
             alt="Portfolio preview"
             height="300"
             width="300"
@@ -115,7 +115,7 @@ const proyectos = [
     ),
   },
   {
-    src: "src/assets/images/t.png",
+    src: "/images/t.png",
     title: "Remote Sensing Project",
     category: "Data Science",
     content: (
@@ -137,7 +137,7 @@ const proyectos = [
           <CardContainer>
             <CardItem translateZ={100}>
           <img
-            src="src/assets/images/t.png"
+            src="/images/t.png"
             alt="Remote Sensing Project preview"
             height="300"
             width="300"
@@ -155,7 +155,7 @@ const proyectos = [
           <CardContainer>
             <CardItem translateZ={100}>
           <img
-            src="src/assets/images/maps.jpeg"
+            src="/images/maps.jpeg"
             alt="Remote Sensing Project preview"
             height="300"
             width="300"
