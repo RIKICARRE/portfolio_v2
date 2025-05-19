@@ -1,4 +1,3 @@
-import React from "react";
 import { ShineBorder } from "@/components/magicui/shine-border";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { Timeline } from "@/components/ui/timeline";

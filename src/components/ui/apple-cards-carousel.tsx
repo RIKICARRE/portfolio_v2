@@ -1,4 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable react-hooks/exhaustive-deps */
+ 
 "use client";
 import React, {
   useEffect,
@@ -168,7 +170,7 @@ export const Card = ({
 }) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const { onCardClose, currentIndex } = useContext(CarouselContext);
+  const { onCardClose } = useContext(CarouselContext);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {

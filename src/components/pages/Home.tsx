@@ -1,4 +1,3 @@
-import React from "react";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { WordRotate } from "@/components/magicui/word-rotate";
 import { AuroraText } from "@/components/magicui/aurora-text";

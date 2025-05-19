@@ -1,4 +1,3 @@
-import React from "react";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { HomeIcon } from "lucide-react";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";

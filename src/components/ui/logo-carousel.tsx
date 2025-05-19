@@ -3,8 +3,6 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import type { SVGProps } from "react";
-import { Link } from "react-router-dom";
 
 // Define types
 interface Logo {
@@ -23,7 +21,6 @@ interface LogoColumnProps {
 export function LogoCarousel({ columns = 2 }: { columns?: number }) {
   const [logoColumns, setLogoColumns] = useState<Logo[][]>([]);
   const [time, setTime] = useState(0);
-  const CYCLE_DURATION = 2000; // 2 seconds per logo
 
   // Define logos using public SVGs
   const logos = useMemo<Logo[]>(
