@@ -172,6 +172,131 @@ const proyectos = [
       </div>
     ),
   },
+  {
+    src: "/images/cripto.png",
+    title: "Cryptography Project",
+    category: "Cybersecurity",
+    content: (
+      <div className="flex flex-col gap-8">
+        {/* Tags and buttons */}
+        <div className="flex gap-2 flex-wrap justify-center mt-4">
+          <span className="bg-primary text-primary-foreground px-2 py-0.5 rounded-full text-xs">Python</span>
+          <span className="bg-primary text-primary-foreground px-2 py-0.5 rounded-full text-xs">Cryptography</span>
+          <span className="bg-primary text-primary-foreground px-2 py-0.5 rounded-full text-xs">RSA</span>
+          <span className="bg-primary text-primary-foreground px-2 py-0.5 rounded-full text-xs">AES</span>
+          <span className="bg-primary text-primary-foreground px-2 py-0.5 rounded-full text-xs">Security</span>
+        </div>
+        {/* Introduction */}
+        <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl flex flex-col items-center gap-6">
+          <h3 className="text-2xl md:text-3xl font-bold text-neutral-800 dark:text-neutral-100 mb-2 text-center">Cryptographic Algorithms Implementation</h3>
+          <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-xl font-sans max-w-2xl mx-auto text-center">
+            <span className="font-bold text-neutral-700 dark:text-neutral-200">High-speed medical image encryption.</span> This project presents an innovative approach for securing medical images using high-speed shuffling and adaptive pixel diffusion techniques, ensuring robust protection and confidentiality for sensitive healthcare data.
+          </p>
+          <CardContainer>
+            <CardItem translateZ={100}>
+              <img
+                src="/images/cripto.png"
+                alt="Cryptography Project preview"
+                height="300"
+                width="300"
+                className="w-auto h-auto mx-auto object-contain rounded-xl shadow-lg"
+              />
+            </CardItem>
+          </CardContainer>
+        </div>
+        {/* Description */}
+        <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl flex flex-col items-center gap-6">
+          <h3 className="text-2xl md:text-3xl font-bold text-neutral-800 dark:text-neutral-100 mb-2 text-center">Secure Communication and Analysis</h3>
+          <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-xl font-sans max-w-2xl mx-auto text-center">
+          <span className="font-bold text-neutral-700 dark:text-neutral-200">Web-based encryption and decryption of medical images.</span> This project, developed for the Cryptography course, consists of a web application that enables secure encryption and decryption of medical images using scrambling and diffusion techniques. It emphasizes practical data protection and highlights the importance of safeguarding sensitive medical information.
+          </p>
+          <CardContainer>
+            <CardItem translateZ={100}>
+              <img
+                src="/images/cifrado.png"
+                alt="Cryptanalysis preview"
+                height="300"
+                width="300"
+                className="w-auto h-auto mx-auto object-contain rounded-xl shadow-lg"
+              />
+            </CardItem>
+          </CardContainer>
+        </div>
+        <div className="flex gap-2 mt-4 justify-center">
+          <a href="https://github.com/pabolimor99/CriptoG-14" target="_blank" rel="noopener noreferrer">
+            <RainbowButton>Repository</RainbowButton>
+          </a>
+          <a href="https://github.com/pabolimor99/CriptoG-14/blob/main/doc/Proyecto_C.pdf" target="_blank" rel="noopener noreferrer">
+            <RainbowButton>Paper</RainbowButton>
+          </a>
+        </div>
+      </div>
+    ),
+  },
+  {
+    src: "/images/myw.jpg",
+    title: "MapYourWorld",
+    category: "Full-Stack Development",
+    content: (
+      <div className="flex flex-col gap-8">
+        {/* Tags and buttons */}
+        <div className="flex gap-2 flex-wrap justify-center mt-4">
+          <span className="bg-primary text-primary-foreground px-2 py-0.5 rounded-full text-xs">React</span>
+          <span className="bg-primary text-primary-foreground px-2 py-0.5 rounded-full text-xs">Spring Boot</span>
+          <span className="bg-primary text-primary-foreground px-2 py-0.5 rounded-full text-xs">PostgreSQL</span>
+          <span className="bg-primary text-primary-foreground px-2 py-0.5 rounded-full text-xs">Mapbox</span>
+          <span className="bg-primary text-primary-foreground px-2 py-0.5 rounded-full text-xs">Gamification</span>
+        </div>
+        {/* Introduction */}
+        <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl flex flex-col items-center gap-6">
+          <h3 className="text-2xl md:text-3xl font-bold text-neutral-800 dark:text-neutral-100 mb-2 text-center">Explore the World, One District at a Time</h3>
+          <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-xl font-sans max-w-2xl mx-auto text-center">
+            <span className="font-bold text-neutral-700 dark:text-neutral-200">MapYourWorld is a geolocation-based app that encourages real-world exploration through gamification.</span> Users unlock areas, complete challenges, collect points of interest, and interact with a collaborative map to visualize their progress and achievements.
+          </p>
+          <CardContainer>
+            <CardItem translateZ={100}>
+              <img
+                src="/images/logo_myw.png"
+                alt="MapYourWorld Project preview"
+                height="300"
+                width="300"
+                className="w-auto h-75 mx-auto object-contain rounded-xl shadow-lg"
+              />
+            </CardItem>
+          </CardContainer>
+        </div>
+        {/* Description */}
+        <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl flex flex-col items-center gap-6">
+          <h3 className="text-2xl md:text-3xl font-bold text-neutral-800 dark:text-neutral-100 mb-2 text-center">Collaborative and Interactive Mapping Experience</h3>
+          <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-xl font-sans max-w-2xl mx-auto text-center">
+            <span className="font-bold text-neutral-700 dark:text-neutral-200">Developed as part of a university software engineering project,</span> this platform combines Spring Boot, React, and Mapbox to provide a dynamic and scalable mapping experience. It features user authentication, achievement tracking, real-time map updates, and a premium model with exclusive content.
+          </p>
+          <CardContainer>
+            <CardItem translateZ={100}>
+              <img
+                src="/images/mapa_myw.jpeg"
+                alt="MapYourWorld map demo"
+                height="300"
+                width="300"
+                className="w-auto h-100 mx-auto object-contain rounded-xl shadow-lg"
+              />
+            </CardItem>
+          </CardContainer>
+        </div>
+        <div className="flex gap-2 mt-4 justify-center">
+          <a href="https://github.com/ISPP-Grupo-7/MapYourWorld" target="_blank" rel="noopener noreferrer">
+            <RainbowButton>Repository</RainbowButton>
+          </a>
+          <a href="https://mapyourworld.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <RainbowButton>MapYourWorld Page</RainbowButton>
+          </a>
+          <a href="https://linktr.ee/mapyourworldapp" target="_blank" rel="noopener noreferrer">
+            <RainbowButton>MapYourWorld Social Media</RainbowButton>
+          </a>
+        </div>
+      </div>
+    ),
+  },
   // Puedes agregar más proyectos siguiendo esta estructura modular y elegante
 ];
 
