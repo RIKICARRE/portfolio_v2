@@ -1,11 +1,12 @@
 import './App.css'
 import { Dock, DockIcon } from "@/components/magicui/dock";
-import { Home, Sun, Moon, Github, Linkedin, Mail } from "lucide-react";
+import { Home, Sun, Moon, Github, Linkedin, Mail, FileText } from "lucide-react";
 import { RetroGrid } from "@/components/magicui/retro-grid";
 import { ThemeProvider, useTheme } from "@/components/theme-provider";
 import { InteractiveHoverButton } from '@/components/magicui/interactive-hover-button';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
+import { LinkPreview } from "@/components/ui/link-preview";
 import HomePage from "@/components/pages/Home";
 import Estudios from "@/components/pages/Estudios";
 import Tecnologias from "@/components/pages/Tecnologias";
@@ -26,7 +27,7 @@ function App() {
   return (
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
       <Router>
-        <div className="relative min-h-screen w-full overflow-hidden">
+        <div className="relative min-h-screen w-full overflow-x-hidden">
           <RetroGrid lightLineColor='green' darkLineColor='green' className="fixed inset-0 w-full h-full -z-10" />
           <div className="relative z-10">
             {/* Aquí irá el contenido principal del portfolio */}
@@ -40,19 +41,30 @@ function App() {
               </DockIcon>
               <span className="mx-2 h-8 w-px bg-gray-200 dark:bg-gray-700" aria-hidden="true"></span>
               <DockIcon>
-                <a href="https://github.com/RIKICARRE" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                  <Github className="w-7 h-7" />
-                </a>
+                <LinkPreview url="https://github.com/RIKICARRE" width={300} height={200}>
+                  <a href="https://github.com/RIKICARRE" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <Github className="w-7 h-7" />
+                  </a>
+                </LinkPreview>
               </DockIcon>
               <DockIcon>
-                <a href="https://www.linkedin.com/in/ricardo-carreno-939b78338" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                  <Linkedin className="w-7 h-7" />
-                </a>
+                <LinkPreview url="https://www.linkedin.com/in/ricardo-carreno-939b78338" width={300} height={200}>
+                  <a href="https://www.linkedin.com/in/ricardo-carreno-939b78338" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <Linkedin className="w-7 h-7" />
+                  </a>
+                </LinkPreview>
               </DockIcon>
               <DockIcon>
                 <a href="mailto:ricardocarremar@icloud.com" aria-label="Email">
                   <Mail className="w-7 h-7" />
                 </a>
+              </DockIcon>
+              <DockIcon>
+                <LinkPreview url="https://rxresu.me/rikicarre/cv" width={300} height={200}>
+                  <a href="https://rxresu.me/rikicarre/cv" target="_blank" rel="noopener noreferrer" aria-label="CV">
+                    <FileText className="w-7 h-7" />
+                  </a>
+                </LinkPreview>
               </DockIcon>
               <span className="mx-2 h-8 w-px bg-gray-200 dark:bg-gray-700" aria-hidden="true"></span>
               <DockIcon>

@@ -3,6 +3,14 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
 }
 
 .logo {
@@ -39,4 +47,30 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Responsive fixes for mobile content */
+@media (max-width: 768px) {
+  /* Fix for long text in project descriptions */
+  p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* Adjust padding for content sections on mobile */
+  [class*="rounded-3xl"] {
+    padding: 1rem !important;
+  }
+
+  /* Ensure images don't overflow their containers */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Reduce max-width constraints on mobile */
+  .max-w-2xl {
+    max-width: 100% !important;
+  }
 }

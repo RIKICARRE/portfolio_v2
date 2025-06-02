@@ -21,6 +21,24 @@ interface LogoColumnProps {
 export function LogoCarousel({ columns = 2 }: { columns?: number }) {
   const [logoColumns, setLogoColumns] = useState<Logo[][]>([]);
   const [time, setTime] = useState(0);
+  const [actualColumns, setActualColumns] = useState(columns);
+
+  // Adjust columns based on screen width
+  useEffect(() => {
+    const handleResize = () => {
+      const isMobile = window.innerWidth < 768;
+      setActualColumns(isMobile ? 2 : columns);
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener('resize', handleResize);
+  }, [columns]);
 
   // Define logos using public SVGs
   const logos = useMemo<Logo[]>(
@@ -48,12 +66,12 @@ export function LogoCarousel({ columns = 2 }: { columns?: number }) {
 
   // Distribute logos across columns
   const distributeLogos = useCallback(
-    (logos: Logo[]) => {
+    (logos: Logo[], cols: number) => {
       const shuffled = [...logos].sort(() => Math.random() - 0.5);
-      const result: Logo[][] = Array.from({ length: columns }, () => []);
+      const result: Logo[][] = Array.from({ length: cols }, () => []);
 
       shuffled.forEach((logo, index) => {
-        result[index % columns].push(logo);
+        result[index % cols].push(logo);
       });
 
       // Ensure equal length columns
@@ -66,13 +84,13 @@ export function LogoCarousel({ columns = 2 }: { columns?: number }) {
 
       return result;
     },
-    [columns]
+    []
   );
 
   // Initialize logo columns
   useEffect(() => {
-    setLogoColumns(distributeLogos(logos));
-  }, [logos, distributeLogos]);
+    setLogoColumns(distributeLogos(logos, actualColumns));
+  }, [logos, distributeLogos, actualColumns]);
 
   // Update time for animation
   useEffect(() => {

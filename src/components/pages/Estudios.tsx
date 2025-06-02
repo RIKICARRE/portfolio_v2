@@ -64,9 +64,9 @@ const Estudios = () => (
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
-    <section className="relative w-full max-w-2xl mx-auto mb-12 mt-12 p-6 rounded-xl bg-card shadow-lg overflow-hidden">
+    <section className="relative w-full max-w-full md:max-w-2xl mx-auto mb-12 mt-12 p-3 md:p-6 rounded-xl bg-card shadow-lg overflow-visible">
       <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} borderWidth={2}/>
-      <VelocityScroll numRows={1} defaultVelocity={3} className="text-5xl md:text-5xl font-extrabold tracking-tight mb-12 animate-fade-in">
+      <VelocityScroll numRows={1} defaultVelocity={3} className="text-4xl md:text-5xl font-extrabold tracking-tight mb-8 md:mb-12 animate-fade-in">
         Studies
       </VelocityScroll>
       <Timeline

@@ -25,17 +25,17 @@ const Tecnologias = () => (
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
-    <section className="relative w-full max-w-2xl mx-auto mb-12 mt-12 p-6 rounded-xl bg-card shadow-lg overflow-hidden">
-        <VelocityScroll numRows={1} defaultVelocity={3} className="text-5xl md:text-5xl font-extrabold tracking-tight mb-12 animate-fade-in">
+    <section className="relative w-full max-w-full md:max-w-2xl mx-auto mb-12 mt-12 p-3 md:p-6 rounded-xl bg-card shadow-lg overflow-visible">
+        <VelocityScroll numRows={1} defaultVelocity={3} className="text-4xl md:text-5xl font-extrabold tracking-tight mb-8 md:mb-12 animate-fade-in">
             Technologies
         </VelocityScroll>
       <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} borderWidth={2}/>
       <LogoCarousel columns={3} />
     </section>
     {/* Sección detallada de tecnologías y herramientas */}
-    <section className="relative w-full max-w-2xl mx-auto mb-12 p-6 rounded-xl bg-card shadow-lg overflow-hidden">
+    <section className="relative w-full max-w-full md:max-w-2xl mx-auto mb-12 p-3 md:p-6 rounded-xl bg-card shadow-lg overflow-visible">
       <h4 className="text-xl font-bold mb-4">Knowledge and Tools</h4>
-      <div className="space-y-6 text-base justify-center">
+      <div className="space-y-6 text-base justify-center text-left">
       <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} borderWidth={2}/>
       <BoxReveal>
         {/* Lenguajes de Programación */}
@@ -53,7 +53,7 @@ const Tecnologias = () => (
         </div>
         </BoxReveal>
         <BoxReveal>
-        
+
         <div>
             <h5 className="font-semibold text-primary mb-1 flex items-center gap-2">🌐 Frameworks and Libraries</h5>
             <ul className="list-disc list-inside text-muted-foreground pl-4">
@@ -67,7 +67,7 @@ const Tecnologias = () => (
         </div>
         </BoxReveal>
         <BoxReveal>
-        
+
         <div>
             <h5 className="font-semibold text-primary mb-1 flex items-center gap-2">📦 Containers and DevOps</h5>
             <ul className="list-disc list-inside text-muted-foreground pl-4">
@@ -80,7 +80,7 @@ const Tecnologias = () => (
         </BoxReveal>
         <BoxReveal>
 
-        
+
 
         <div>
             <h5 className="font-semibold text-primary mb-1 flex items-center gap-2">🔐 Cybersecurity and Cryptography</h5>
