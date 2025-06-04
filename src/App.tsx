@@ -10,6 +10,7 @@ import { LinkPreview } from "@/components/ui/link-preview";
 import HomePage from "@/components/pages/Home";
 import Estudios from "@/components/pages/Estudios";
 import Tecnologias from "@/components/pages/Tecnologias";
+import Personal from "@/components/pages/Personal";
 import Proyectos from "@/components/pages/Proyectos";
 import "@/styles/global-cursor.css";
 
@@ -87,12 +88,16 @@ function App() {
                     <Link to="/projects" aria-label="Go to Projects">
                       <InteractiveHoverButton>Projects</InteractiveHoverButton>
                     </Link>
+                    <Link to="/about" aria-label="Go to About">
+                      <InteractiveHoverButton>About Me</InteractiveHoverButton>
+                    </Link>
                   </div>
                 </>
               } />
               <Route path="/studies" element={<Estudios />} />
               <Route path="/technologies" element={<Tecnologias />} />
               <Route path="/projects" element={<Proyectos />} />
+              <Route path="/about" element={<Personal />} />
             </Routes>
           </div>
         </div>
