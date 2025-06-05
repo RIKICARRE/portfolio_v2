@@ -73,7 +73,7 @@ function App() {
               </DockIcon>
             </Dock>
           </div>
-          <div className="relative z-10 flex flex-col items-center justify-center min-h-[80vh] w-full text-center">
+          <div className="relative z-10 w-full text-center">
             <Routes>
               <Route path="/" element={
                 <>
@@ -87,9 +87,6 @@ function App() {
                     </Link>
                     <Link to="/projects" aria-label="Go to Projects">
                       <InteractiveHoverButton>Projects</InteractiveHoverButton>
-                    </Link>
-                    <Link to="/about" aria-label="Go to About">
-                      <InteractiveHoverButton>About Me</InteractiveHoverButton>
                     </Link>
                   </div>
                 </>
