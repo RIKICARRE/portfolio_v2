@@ -10,6 +10,7 @@ import { LinkPreview } from "@/components/ui/link-preview";
 import HomePage from "@/components/pages/Home";
 import Estudios from "@/components/pages/Estudios";
 import Tecnologias from "@/components/pages/Tecnologias";
+import Personal from "@/components/pages/Personal";
 import Proyectos from "@/components/pages/Proyectos";
 import "@/styles/global-cursor.css";
 
@@ -72,7 +73,7 @@ function App() {
               </DockIcon>
             </Dock>
           </div>
-          <div className="relative z-10 flex flex-col items-center justify-center min-h-[80vh] w-full text-center">
+          <div className="relative z-10 w-full text-center">
             <Routes>
               <Route path="/" element={
                 <>
@@ -93,6 +94,7 @@ function App() {
               <Route path="/studies" element={<Estudios />} />
               <Route path="/technologies" element={<Tecnologias />} />
               <Route path="/projects" element={<Proyectos />} />
+              <Route path="/about" element={<Personal />} />
             </Routes>
           </div>
         </div>
