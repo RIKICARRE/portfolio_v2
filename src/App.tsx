@@ -1,12 +1,14 @@
 import './App.css'
 import { Dock, DockIcon } from "@/components/magicui/dock";
-import { Home, Sun, Moon, Github, Linkedin, Mail, FileText } from "lucide-react";
+import { Home, Github, Linkedin, Mail } from "lucide-react";
 import { RetroGrid } from "@/components/magicui/retro-grid";
-import { ThemeProvider, useTheme } from "@/components/theme-provider";
+import { ThemeProvider } from "@/components/theme-provider";
 import { InteractiveHoverButton } from '@/components/magicui/interactive-hover-button';
+import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import { LinkPreview } from "@/components/ui/link-preview";
+import { CVSelection } from "@/components/cv-selection";
 import HomePage from "@/components/pages/Home";
 import Estudios from "@/components/pages/Estudios";
 import Tecnologias from "@/components/pages/Tecnologias";
@@ -14,12 +16,8 @@ import Proyectos from "@/components/pages/Proyectos";
 import "@/styles/global-cursor.css";
 
 function ModeDockIcon() {
-  const { theme, setTheme } = useTheme();
-  const isDark = theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
   return (
-    <button aria-label="Cambiar modo claro/oscuro" onClick={() => setTheme(isDark ? 'light' : 'dark')}>
-      {isDark ? <Moon className="w-7 h-7" /> : <Sun className="w-7 h-7" />}
-    </button>
+    <AnimatedThemeToggler className="w-7 h-7 flex items-center justify-center" />
   );
 }
 
@@ -60,11 +58,7 @@ function App() {
                 </a>
               </DockIcon>
               <DockIcon>
-                <LinkPreview url="https://rxresu.me/rikicarre/cv" width={300} height={200}>
-                  <a href="https://rxresu.me/rikicarre/cv" target="_blank" rel="noopener noreferrer" aria-label="CV">
-                    <FileText className="w-7 h-7" />
-                  </a>
-                </LinkPreview>
+                <CVSelection />
               </DockIcon>
               <span className="mx-2 h-8 w-px bg-gray-200 dark:bg-gray-700" aria-hidden="true"></span>
               <DockIcon>
