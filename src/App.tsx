@@ -27,7 +27,7 @@ function App() {
       <Router>
         <div className="relative min-h-screen w-full overflow-x-hidden">
           <RetroGrid lightLineColor='green' darkLineColor='green' className="fixed inset-0 w-full h-full -z-10" />
-          <div className="relative z-10">
+          <div className="relative z-10 w-full px-4 md:px-0">
             {/* Aquí irá el contenido principal del portfolio */}
           </div>
           <div className="fixed bottom-0 left-0 w-full flex justify-center z-20 pb-4">
@@ -78,8 +78,11 @@ function App() {
                     <Link to="/technologies" aria-label="Go to Technologies">
                       <InteractiveHoverButton>Technologies</InteractiveHoverButton>
                     </Link>
-                    <Link to="/projects" aria-label="Go to Projects">
+                    <Link to="/projects" aria-label="Go to Projects" className="relative">
                       <InteractiveHoverButton>Projects</InteractiveHoverButton>
+                      <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded-full animate-pulse z-50">
+                        NEW
+                      </span>
                     </Link>
                   </div>
                 </>

@@ -47,24 +47,26 @@ const timelineItems = estudios.map(estudio => ({
 }));
 
 const Estudios = () => (
-  <BlurFade>
-    <Breadcrumb>
-      <BreadcrumbList className="bg-background rounded-md border px-3 py-2 shadow-xs mb-8 mt-8">
-        <BreadcrumbItem>
-          <BreadcrumbLink>
-            <Link to="/" className="text-muted-foreground">
-              <HomeIcon size={16} aria-hidden="true" />
-              <span className="sr-only">Home</span>
-            </Link>
-          </BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbSeparator />
-        <BreadcrumbItem>
-          <BreadcrumbPage>Studies</BreadcrumbPage>
-        </BreadcrumbItem>
-      </BreadcrumbList>
-    </Breadcrumb>
-    <section className="relative w-full max-w-full md:max-w-2xl mx-auto mb-12 mt-12 p-3 md:p-6 rounded-xl bg-card shadow-lg overflow-visible">
+  <>
+    <BlurFade>
+      <Breadcrumb>
+        <BreadcrumbList className="bg-background rounded-md border px-3 py-2 shadow-xs mb-8 mt-8">
+          <BreadcrumbItem>
+            <BreadcrumbLink>
+              <Link to="/" className="text-muted-foreground">
+                <HomeIcon size={16} aria-hidden="true" />
+                <span className="sr-only">Home</span>
+              </Link>
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>Studies</BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+    </BlurFade>
+    <section className="relative w-full max-w-full md:max-w-2xl mx-auto mb-12 mt-12 p-3 md:p-6 rounded-xl bg-card shadow-lg">
       <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} borderWidth={2} />
       <VelocityScroll numRows={1} defaultVelocity={3} className="text-4xl md:text-5xl font-extrabold tracking-tight mb-8 md:mb-12 animate-fade-in">
         Studies
@@ -84,7 +86,7 @@ const Estudios = () => (
         animationDelay={0.1}
       />
     </section>
-  </BlurFade>
+  </>
 );
 
 export default Estudios;

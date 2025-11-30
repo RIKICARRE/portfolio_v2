@@ -135,12 +135,12 @@ function MobileTimelineEntry({
     <Link
       to={item.href || "#"}
       className={cn(
-        "flex items-center space-x-4 rounded-lg px-4 py-3 transition-colors hover:bg-muted active:bg-muted/80 md:hidden",
+        "flex items-start space-x-4 rounded-lg px-3 py-3 transition-colors hover:bg-muted active:bg-muted/80 md:hidden w-full",
         !item.href && "pointer-events-none"
       )}
     >
-      <div className="relative">
-        <div className={cn("h-16 border-l border-border", lineClassName)} />
+      <div className="relative shrink-0">
+        <div className={cn("h-full min-h-[4rem] border-l border-border", lineClassName)} />
         <div
           className={cn(
             "absolute -left-1 top-5 flex h-5 w-5 items-center justify-center rounded-full bg-primary/60",
@@ -153,7 +153,7 @@ function MobileTimelineEntry({
           )}
         </div>
       </div>
-      <div>
+      <div className="min-w-0 flex-1">
         <dl>
           <dt className="sr-only">Date</dt>
           <dd
@@ -173,7 +173,7 @@ function MobileTimelineEntry({
         </dl>
         <h3
           className={cn(
-            "text-lg font-medium tracking-tight text-foreground",
+            "text-lg font-medium tracking-tight text-foreground break-words",
             titleClassName
           )}
         >
@@ -182,7 +182,7 @@ function MobileTimelineEntry({
         {item.description && (
           <p
             className={cn(
-              "text-sm text-muted-foreground",
+              "text-sm text-muted-foreground break-words mt-1",
               descriptionClassName
             )}
           >
@@ -219,7 +219,7 @@ export function Timeline({
   const remainingItems = sortedItems.slice(initialCount);
 
   return (
-    <div className={cn("mx-5 max-w-2xl md:mx-auto", className)}>
+    <div className={cn("mx-2 max-w-2xl md:mx-auto", className)}>
       <div className="md:translate-x-0">
         <ul className="space-y-8">
           {initialItems.map((item, index) => (

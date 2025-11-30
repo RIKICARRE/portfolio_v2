@@ -32,13 +32,14 @@ type Card = {
   title: string;
   category: string;
   content: React.ReactNode;
+  isNew?: boolean;
 };
 
 export const CarouselContext = createContext<{
   onCardClose: (index: number) => void;
   currentIndex: number;
 }>({
-  onCardClose: () => {},
+  onCardClose: () => { },
   currentIndex: 0,
 });
 
@@ -98,7 +99,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     >
       <div className="relative w-full">
         <div
-          className="flex w-full overflow-x-scroll overscroll-x-auto scroll-smooth py-10 [scrollbar-width:none] md:py-10"
+          className="flex w-full overflow-x-scroll overscroll-x-auto scroll-smooth py-10 [scrollbar-width:none] md:py-10 touch-pan-x pan-y"
           ref={carouselRef}
           onScroll={checkScrollability}
         >
@@ -217,7 +218,7 @@ export const Card = ({
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
-              className="relative z-[60] mx-auto my-10 h-fit w-[95%] max-w-5xl rounded-3xl bg-white p-4 font-sans md:p-10 dark:bg-neutral-900 overflow-y-auto"
+              className="relative z-[60] mx-auto my-10 h-fit w-full max-w-5xl rounded-3xl bg-white p-4 font-sans md:p-10 dark:bg-neutral-900 overflow-y-auto"
             >
               <button
                 className="sticky top-4 right-0 ml-auto flex h-8 w-8 items-center justify-center rounded-full bg-black dark:bg-white"
@@ -249,12 +250,19 @@ export const Card = ({
       >
         <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/50 via-transparent to-transparent" />
         <div className="relative z-40 p-8">
-          <motion.p
-            layoutId={layout ? `category-${card.category}` : undefined}
-            className="text-left font-sans text-sm font-medium text-white md:text-base"
-          >
-            {card.category}
-          </motion.p>
+          <div className="flex justify-between items-start w-full">
+            <motion.p
+              layoutId={layout ? `category-${card.category}` : undefined}
+              className="text-left font-sans text-sm font-medium text-white md:text-base"
+            >
+              {card.category}
+            </motion.p>
+            {card.isNew && (
+              <span className="bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded-full animate-pulse">
+                NEW
+              </span>
+            )}
+          </div>
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
             className="mt-2 max-w-xs text-left font-sans text-xl font-semibold [text-wrap:balance] text-white md:text-3xl"
