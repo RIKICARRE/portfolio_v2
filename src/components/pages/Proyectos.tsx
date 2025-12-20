@@ -54,13 +54,13 @@ const proyectos = [
             <span className="font-bold text-neutral-700 dark:text-neutral-200">Simplifying sports facility reservations.</span> Developed as my Final Degree Project, this application streamlines the management of sports facilities for small municipalities, specifically tailored for Villanueva de las Cruces.
           </p>
           <CardContainer>
-            <CardItem translateZ={100}>
+            <CardItem translateZ={5}>
               <img
-                src="/images/detalles_rede.png"
+                src="/images/detalles_rede.jpeg"
                 alt="Sports Facility Management preview"
-                height="300"
-                width="300"
-                className="w-auto h-auto max-w-full mx-auto object-contain rounded-xl shadow-lg"
+                height="350"
+                width="350"
+                className="h-[350px] w-auto max-w-full mx-auto object-contain rounded-xl shadow-lg"
               />
             </CardItem>
           </CardContainer>
@@ -76,9 +76,9 @@ const proyectos = [
               <img
                 src="/images/codigo_rede.png"
                 alt="Sports Facility Management detail"
-                height="300"
-                width="300"
-                className="w-auto h-auto max-w-full mx-auto object-contain rounded-xl shadow-lg"
+                height="350"
+                width="350"
+                className="h-[350px] w-auto max-w-full mx-auto object-contain rounded-xl shadow-lg"
               />
             </CardItem>
           </CardContainer>
@@ -86,6 +86,9 @@ const proyectos = [
         <div className="flex gap-2 mt-4 justify-center">
           <a href="https://github.com/RIKICARRE/ReDe_TFG" target="_blank" rel="noopener noreferrer">
             <RainbowButton>View repository</RainbowButton>
+          </a>
+          <a href="https://www.linkedin.com/posts/ricardo-carreno-939b78338_tfg-ricardo-carre%C3%B1o-mari%C3%B1o-rede-activity-7405162023409385472-htR4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTj9j0BdtL40ztZ-kLvrFl6ZSwcvm1NbhE" target="_blank" rel="noopener noreferrer">
+            <RainbowButton>View LinkedIn Post</RainbowButton>
           </a>
         </div>
       </div>
@@ -116,9 +119,9 @@ const proyectos = [
               <img
                 src="/images/portfolio.png"
                 alt="Portfolio preview"
-                height="300"
-                width="300"
-                className="w-auto h-auto max-w-full mx-auto object-contain rounded-xl shadow-lg"
+                height="350"
+                width="350"
+                className="h-[350px] w-auto max-w-full mx-auto object-contain rounded-xl shadow-lg"
               />
             </CardItem>
           </CardContainer>
@@ -134,9 +137,9 @@ const proyectos = [
               <img
                 src="/images/studies.png"
                 alt="Portfolio preview"
-                height="300"
-                width="300"
-                className="w-auto h-auto max-w-full mx-auto object-contain rounded-xl"
+                height="350"
+                width="350"
+                className="h-[350px] w-auto max-w-full mx-auto object-contain rounded-xl"
               />
             </CardItem>
           </CardContainer>
@@ -152,9 +155,9 @@ const proyectos = [
               <img
                 src="/images/projects.png"
                 alt="Portfolio preview"
-                height="300"
-                width="300"
-                className="w-auto h-auto max-w-full mx-auto object-contain rounded-xl"
+                height="350"
+                width="350"
+                className="h-[350px] w-auto max-w-full mx-auto object-contain rounded-xl"
               />
             </CardItem>
           </CardContainer>
@@ -170,9 +173,9 @@ const proyectos = [
               <img
                 src="/images/tech.png"
                 alt="Portfolio preview"
-                height="300"
-                width="300"
-                className="w-auto h-auto max-w-full mx-auto object-contain rounded-xl"
+                height="350"
+                width="350"
+                className="h-[350px] w-auto max-w-full mx-auto object-contain rounded-xl"
               />
             </CardItem>
           </CardContainer>
@@ -213,9 +216,9 @@ const proyectos = [
               <img
                 src="/images/t.png"
                 alt="Remote Sensing Project preview"
-                height="300"
-                width="300"
-                className="w-auto h-auto max-w-full mx-auto object-contain rounded-xl shadow-lg"
+                height="350"
+                width="350"
+                className="h-[350px] w-auto max-w-full mx-auto object-contain rounded-xl shadow-lg"
               />
             </CardItem>
           </CardContainer>
@@ -231,9 +234,9 @@ const proyectos = [
               <img
                 src="/images/maps.jpeg"
                 alt="Remote Sensing Project preview"
-                height="300"
-                width="300"
-                className="w-auto h-auto max-w-full mx-auto object-contain rounded-xl shadow-lg"
+                height="350"
+                width="350"
+                className="h-[350px] w-auto max-w-full mx-auto object-contain rounded-xl shadow-lg"
               />
             </CardItem>
           </CardContainer>
@@ -271,9 +274,9 @@ const proyectos = [
               <img
                 src="/images/cripto.png"
                 alt="Cryptography Project preview"
-                height="300"
-                width="300"
-                className="w-auto h-auto max-w-full mx-auto object-contain rounded-xl shadow-lg"
+                height="350"
+                width="350"
+                className="h-[350px] w-auto max-w-full mx-auto object-contain rounded-xl shadow-lg"
               />
             </CardItem>
           </CardContainer>
@@ -289,9 +292,9 @@ const proyectos = [
               <img
                 src="/images/cifrado.png"
                 alt="Cryptanalysis preview"
-                height="300"
-                width="300"
-                className="w-auto h-auto max-w-full mx-auto object-contain rounded-xl shadow-lg"
+                height="350"
+                width="350"
+                className="h-[350px] w-auto max-w-full mx-auto object-contain rounded-xl shadow-lg"
               />
             </CardItem>
           </CardContainer>
@@ -332,9 +335,9 @@ const proyectos = [
               <img
                 src="/images/logo_myw.png"
                 alt="MapYourWorld Project preview"
-                height="300"
-                width="300"
-                className="w-auto h-75 max-w-full mx-auto object-contain rounded-xl shadow-lg"
+                height="350"
+                width="350"
+                className="h-[350px] w-auto max-w-full mx-auto object-contain rounded-xl shadow-lg"
               />
             </CardItem>
           </CardContainer>
@@ -350,9 +353,9 @@ const proyectos = [
               <img
                 src="/images/mapa_myw.jpeg"
                 alt="MapYourWorld map demo"
-                height="300"
-                width="300"
-                className="w-auto h-100 max-w-full mx-auto object-contain rounded-xl shadow-lg"
+                height="350"
+                width="350"
+                className="h-[350px] w-auto max-w-full mx-auto object-contain rounded-xl shadow-lg"
               />
             </CardItem>
           </CardContainer>
