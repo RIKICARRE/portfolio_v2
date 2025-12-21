@@ -2,10 +2,62 @@ import { BlurFade } from "@/components/magicui/blur-fade";
 import { HomeIcon } from "lucide-react";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import { LogoCarousel } from "@/components/ui/logo-carousel";
+import { LogoCarousel } from "@/components/ui/logo-carousel"; // Keep this if you want the carousel at top
 import { ShineBorder } from "@/components/magicui/shine-border";
-import { BoxReveal } from "@/components/magicui/box-reveal";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
+import { motion } from "framer-motion";
+
+const technologies = [
+  {
+    category: "Frontend Development",
+    items: [
+      { name: "React", icon: "/svg/react.svg", description: "UI Library" },
+      { name: "Vite", icon: "/svg/vite.svg", description: "Build Tool" },
+      { name: "TypeScript", icon: "/svg/TypescriptSVGIcon.svg", description: "Typed JavaScript" },
+      { name: "JavaScript", icon: "/svg/JavascriptSVGVectors.svg", description: "Web Interaction" },
+      { name: "Tailwind CSS", icon: "/svg/TailwindSVGIcons.svg", description: "Utility-first CSS" },
+      { name: "HTML5", icon: "/svg/HtmlSVGVectors.svg", description: "Structure" },
+      { name: "CSS3", icon: "/svg/CssSVGVectors.svg", description: "Styling" },
+      { name: "Framer Motion", icon: "/svg/framer-motion-seeklogo.svg", description: "Animations" },
+    ]
+  },
+  {
+    category: "Backend & Databases",
+    items: [
+      { name: "Python", icon: "/svg/PythonSVGVectors.svg", description: "General Purpose" },
+      { name: "Django", icon: "/svg/DjangoSVGIcons.svg", description: "Web Framework" },
+      { name: "Flask", icon: "/svg/FlaskLogo.svg", description: "Microframework" },
+      { name: "Java", icon: "/svg/JavaSVGVectors.svg", description: "Enterprise Applications" },
+      { name: "SQL", icon: "/svg/IconoSVGBasedeDatosSQL.svg", description: "Database Querying" },
+      { name: "MySQL", icon: "/svg/mysql-svgrepo-com.svg", description: "RDBMS" },
+    ]
+  },
+  {
+    category: "DevOps & Cloud",
+    items: [
+      { name: "Docker", icon: "/svg/DockerSVGIcons.svg", description: "Containerization" },
+      { name: "GitHub", icon: "/svg/github-142-svgrepo-com.svg", description: "Version Control" },
+      { name: "Azure", icon: "/svg/AzureSVGIcons.svg", description: "Cloud Services" },
+      { name: "Bash", icon: "/svg/bash02-svgrepo-com.svg", description: "Shell Scripting" },
+    ]
+  },
+  {
+    category: "Testing & QoS",
+    items: [
+      { name: "Selenium", icon: "/svg/selenium-svgrepo-com.svg", description: "E2E Testing" },
+      { name: "SonarQube", icon: "/svg/sonarqube-svgrepo-com.svg", description: "Code Quality" },
+      { name: "pytest", icon: "/svg/Pytest.svg", description: "Python Testing" },
+    ]
+  },
+  {
+    category: "Data Science & Security",
+    items: [
+      { name: "MATLAB", icon: "/svg/MatlabSVGIcon.svg", description: "Numerical Computing" },
+      { name: "Cryptography", icon: "/svg/hashing-svgrepo-com.svg", description: "RSA, AES, Hashing" },
+      { name: "Web Security", icon: "/svg/browser-security-svgrepo-com.svg", description: "OWASP, SSL/TLS" },
+    ]
+  }
+];
 
 const Tecnologias = () => (
   <>
@@ -27,122 +79,52 @@ const Tecnologias = () => (
         </BreadcrumbList>
       </Breadcrumb>
     </BlurFade>
-    <section className="relative w-full max-w-full md:max-w-2xl mx-auto mb-12 mt-12 p-3 md:p-6 rounded-xl bg-card shadow-lg">
+
+    <section className="relative w-full max-w-full md:max-w-2xl mx-auto mb-12 mt-12 p-6 rounded-xl bg-card shadow-lg overflow-hidden">
       <VelocityScroll numRows={1} defaultVelocity={3} className="text-4xl md:text-5xl font-extrabold tracking-tight mb-8 md:mb-12 animate-fade-in">
-        Technologies
+        Stack & Tools
       </VelocityScroll>
       <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} borderWidth={2} />
       <LogoCarousel columns={3} />
     </section>
-    {/* Sección detallada de tecnologías y herramientas */}
-    <section className="relative w-full max-w-full md:max-w-2xl mx-auto mb-12 p-3 md:p-6 rounded-xl bg-card shadow-lg">
-      <h4 className="text-xl font-bold mb-4">Knowledge and Tools</h4>
-      <div className="space-y-6 text-base justify-center text-left overflow-hidden">
-        <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} borderWidth={2} />
-        <BoxReveal>
-          {/* Lenguajes de Programación */}
-          <div>
-            <h5 className="font-semibold text-primary mb-1 flex items-center gap-2">🖥️ Programming Languages</h5>
-            <ul className="list-disc list-inside text-muted-foreground pl-4">
-              <li><b>Java:</b> Application development and entity management in academic projects.</li>
-              <li><b>Python:</b> Scripting, automation, data analysis, MATLAB-like calculations, and machine learning.</li>
-              <li><b>MATLAB:</b> Satellite image analysis, remote sensing, NDVI, histograms.</li>
-              <li><b>JavaScript / TypeScript:</b> Frontend development with React and browser logic.</li>
-              <li><b>HTML / CSS:</b> Static web development and integration with modern frameworks.</li>
-              <li><b>SQL:</b> Queries, relational databases, SQL injection analysis.</li>
-              <li><b>Bash / Shell Scripting:</b> Task automation in Linux environments (ARM64).</li>
-            </ul>
-          </div>
-        </BoxReveal>
-        <BoxReveal>
 
-          <div>
-            <h5 className="font-semibold text-primary mb-1 flex items-center gap-2">🌐 Frameworks and Libraries</h5>
-            <ul className="list-disc list-inside text-muted-foreground pl-4">
-              <li><b>Django:</b> Backend web application development.</li>
-              <li><b>Flask:</b> Lightweight projects and API development.</li>
-              <li><b>React (with Tailwind CSS):</b> Modern frontend development and personal portfolios.</li>
-              <li><b>pytest:</b> Automated testing in Python.</li>
-              <li><b>Selenium:</b> Web interface testing automation.</li>
-              <li><b>Framer Motion:</b> Animations in React interfaces.</li>
-            </ul>
-          </div>
-        </BoxReveal>
-        <BoxReveal>
+    {technologies.map((techCategory, index) => (
+      <section key={index} className="relative w-full max-w-full md:max-w-2xl mx-auto mb-12 p-6 rounded-xl bg-card shadow-lg border border-border/50">
+        <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} borderWidth={1} />
+        <h4 className="text-2xl font-bold mb-6 text-foreground">{techCategory.category}</h4>
 
-          <div>
-            <h5 className="font-semibold text-primary mb-1 flex items-center gap-2">📦 Containers and DevOps</h5>
-            <ul className="list-disc list-inside text-muted-foreground pl-4">
-              <li><b>Docker / Docker Compose:</b> Development environments and deployment management.</li>
-              <li><b>GitHub Actions:</b> CI/CD pipeline automation.</li>
-              <li><b>SonarQube:</b> Static code analysis.</li>
-              <li><b>DefectDojo:</b> Security vulnerability management.</li>
-            </ul>
-          </div>
-        </BoxReveal>
-        <BoxReveal>
-
-
-
-          <div>
-            <h5 className="font-semibold text-primary mb-1 flex items-center gap-2">🔐 Cybersecurity and Cryptography</h5>
-            <ul className="list-disc list-inside text-muted-foreground pl-4">
-              <li><b>SSL/TLS:</b> Secure communication implementation.</li>
-              <li><b>RSA, Hashing (SHA, MD5):</b> Cryptographic algorithms and security studies.</li>
-              <li><b>Challenge-Response Authentication:</b> Secure authentication mechanisms.</li>
-              <li><b>JWT:</b> Authentication token management.</li>
-              <li><b>Defense Against Attacks:</b> SQL injection prevention, replay attack mitigation, API security.</li>
-            </ul>
-          </div>
-        </BoxReveal>
-        <BoxReveal>
-
-          <div>
-            <h5 className="font-semibold text-primary mb-1 flex items-center gap-2">📡 Remote Sensing and Image Analysis</h5>
-            <ul className="list-disc list-inside text-muted-foreground pl-4">
-              <li><b>Satellites:</b> Sentinel-2, DEIMOS-2, Landsat, WorldView-4, and others.</li>
-              <li><b>Indexes:</b> NDVI, SWIR, Tasseled Cap Transformation.</li>
-              <li><b>Atmospheric Correction:</b> DOS (Dark Object Subtraction) method.</li>
-              <li><b>Tools:</b> MATLAB for analysis and remote image calculations.</li>
-            </ul>
-          </div>
-        </BoxReveal>
-        <BoxReveal>
-
-          <div>
-            <h5 className="font-semibold text-primary mb-1 flex items-center gap-2">📚 Databases</h5>
-            <ul className="list-disc list-inside text-muted-foreground pl-4">
-              <li><b>Relational Databases:</b> MySQL, PostgreSQL.</li>
-              <li><b>ORM Usage:</b> Entity relationship management (Project, UserStory, MadeOf, etc.).</li>
-            </ul>
-          </div>
-        </BoxReveal>
-        <BoxReveal>
-
-          <div>
-            <h5 className="font-semibold text-primary mb-1 flex items-center gap-2">📱 Marketing and Social Tools</h5>
-            <ul className="list-disc list-inside text-muted-foreground pl-4">
-              <li><b>Meta Business Suite:</b> Social media management.</li>
-              <li><b>SEO Analysis:</b> Search engine optimization, keyword strategies, marketing campaigns.</li>
-              <li><b>Canva / Figma:</b> Visual design in marketing projects.</li>
-            </ul>
-          </div>
-        </BoxReveal>
-        <BoxReveal>
-          <div>
-            <h5 className="font-semibold text-primary mb-1 flex items-center gap-2">🛠️ Other Tools and Platforms</h5>
-            <ul className="list-disc list-inside text-muted-foreground pl-4">
-              <li><b>Git / GitHub:</b> Version control, key management, and commit handling.</li>
-              <li><b>Warp:</b> Advanced terminal for automation.</li>
-              <li><b>Trae IDE:</b> Use of AI agents and MCP.</li>
-              <li><b>Azure:</b> Domain configuration and virtual machines.</li>
-              <li><b>PDF Tools:</b> Digital signature detection in PDF documents.</li>
-              <li><b>MATLAB Toolboxes:</b> Image processing and data analysis.</li>
-            </ul>
-          </div>
-        </BoxReveal>
-      </div>
-    </section>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {techCategory.items.map((item, idx) => (
+            <motion.div
+              key={idx}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex flex-col items-center justify-center p-4 bg-background/50 rounded-xl border border-border/40 hover:bg-accent/30 hover:border-primary/20 transition-all duration-300 group"
+            >
+              <div className="h-12 w-12 mb-3 flex items-center justify-center">
+                {item.icon ? (
+                  <img
+                    src={item.icon}
+                    alt={item.name}
+                    className="h-full w-full object-contain filter group-hover:brightness-110"
+                  />
+                ) : (
+                  <div className="h-full w-full flex items-center justify-center bg-muted/30 rounded-full text-muted-foreground font-bold text-xs">
+                    {item.name.substring(0, 2).toUpperCase()}
+                  </div>
+                )}
+              </div>
+              <span className="font-semibold text-sm text-foreground text-center">{item.name}</span>
+              {item.description && (
+                <span className="text-[10px] text-muted-foreground text-center mt-1 hidden sm:block">
+                  {item.description}
+                </span>
+              )}
+            </motion.div>
+          ))}
+        </div>
+      </section>
+    ))}
   </>
 );
 

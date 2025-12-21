@@ -6,14 +6,12 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { InteractiveHoverButton } from '@/components/magicui/interactive-hover-button';
 import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import { LinkPreview } from "@/components/ui/link-preview";
 import { CVSelection } from "@/components/cv-selection";
 import HomePage from "@/components/pages/Home";
 import Estudios from "@/components/pages/Estudios";
 import Tecnologias from "@/components/pages/Tecnologias";
 import Proyectos from "@/components/pages/Proyectos";
-import "@/styles/global-cursor.css";
 
 import Snowfall from 'react-snowfall';
 
@@ -37,7 +35,7 @@ function App() {
             }} color='gray' speed={[1.0, 1.4]} snowflakeCount={90}
           />
           <RetroGrid lightLineColor='green' darkLineColor='green' className="fixed inset-0 w-full h-full -z-10" />
-          <div className="relative z-10 w-full px-4 md:px-0">
+          <div className="relative w-full px-4 md:px-0">
             {/* Aquí irá el contenido principal del portfolio */}
           </div>
           <div className="fixed bottom-0 left-0 w-full flex justify-center z-20 pb-4">
@@ -104,7 +102,6 @@ function App() {
           </div>
         </div>
       </Router>
-      <SmoothCursor />
     </ThemeProvider>
   )
 }
