@@ -13,7 +13,6 @@ import Estudios from "@/components/pages/Estudios";
 import Tecnologias from "@/components/pages/Tecnologias";
 import Proyectos from "@/components/pages/Proyectos";
 
-import Snowfall from 'react-snowfall';
 
 function ModeDockIcon() {
   return (
@@ -26,14 +25,6 @@ function App() {
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
       <Router>
         <div className="relative min-h-screen w-full overflow-x-hidden">
-          <Snowfall
-            style={{
-              position: 'fixed',
-              width: '100vw',
-              height: '100vh',
-              zIndex: -5, // Above RetroGrid (-10) but behind content
-            }} color='gray' speed={[1.0, 1.4]} snowflakeCount={90}
-          />
           <RetroGrid lightLineColor='green' darkLineColor='green' className="fixed inset-0 w-full h-full -z-10" />
           <div className="relative w-full px-4 md:px-0">
             {/* Aquí irá el contenido principal del portfolio */}
