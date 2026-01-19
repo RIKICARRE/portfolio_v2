@@ -6,6 +6,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 import { LinkPreview } from "@/components/ui/link-preview";
 import { CVSelection } from "@/components/cv-selection";
+import { SectionsMenu } from "@/components/sections-menu";
+import { LanguageSwitcher } from "@/components/language-switcher";
+import { useTranslation } from 'react-i18next';
 import HomePage from "@/components/pages/Home";
 import AboutSection from "@/components/sections/About";
 import TechnologiesSection from "@/components/sections/Technologies";
@@ -19,6 +22,7 @@ function ModeDockIcon() {
 }
 
 function App() {
+  const { t } = useTranslation();
   return (
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
       <div className="relative min-h-screen w-full overflow-x-hidden">
@@ -48,28 +52,31 @@ function App() {
 
         <div className="fixed bottom-0 left-0 w-full flex justify-center z-20 pb-4">
           <Dock className="shadow-lg">
-            <DockIcon>
-              <a href="#home" aria-label="Inicio">
+            <DockIcon className="flex md:hidden">
+              <SectionsMenu />
+            </DockIcon>
+            <DockIcon className="hidden md:flex">
+              <a href="#home" aria-label={t('dock.home')}>
                 <Home className="w-7 h-7" />
               </a>
             </DockIcon>
-            <DockIcon>
-              <a href="#about" aria-label="Sobre mí">
+            <DockIcon className="hidden md:flex">
+              <a href="#about" aria-label={t('dock.about')}>
                 <User className="w-7 h-7" />
               </a>
             </DockIcon>
-            <DockIcon>
-              <a href="#technologies" aria-label="Tecnologías">
+            <DockIcon className="hidden md:flex">
+              <a href="#technologies" aria-label={t('dock.technologies')}>
                 <Cpu className="w-7 h-7" />
               </a>
             </DockIcon>
-            <DockIcon>
-              <a href="#projects" aria-label="Proyectos">
+            <DockIcon className="hidden md:flex">
+              <a href="#projects" aria-label={t('dock.projects')}>
                 <FolderKanban className="w-7 h-7" />
               </a>
             </DockIcon>
-            <DockIcon>
-              <a href="#contact" aria-label="Contacto">
+            <DockIcon className="hidden md:flex">
+              <a href="#contact" aria-label={t('dock.contact')}>
                 <Mail className="w-7 h-7" />
               </a>
             </DockIcon>
@@ -97,6 +104,9 @@ function App() {
               <CVSelection />
             </DockIcon>
             <span className="mx-2 h-8 w-px bg-gray-200 dark:bg-gray-700" aria-hidden="true"></span>
+            <DockIcon>
+              <LanguageSwitcher className="w-7 h-7" />
+            </DockIcon>
             <DockIcon>
               <ModeDockIcon />
             </DockIcon>

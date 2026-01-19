@@ -1,0 +1,177 @@
+{
+    "dock": {
+        "home": "Home",
+        "about": "About Me",
+        "technologies": "Technologies",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "home": {
+        "greeting": "I'm <1>Ricardo</1>, Software Engineering Graduate",
+        "description": "Full-stack developer focused on Java, Spring Boot, and React. Passionate about building secure, user-centric applications with scalable architectures.",
+        "scroll": "Scroll down for more"
+    },
+    "about": {
+        "title": "About Me",
+        "intro": "I'm <1>Ricardo Carreño</1>, a Software Engineering Graduate. I focus on building secure, usable digital products with solid architecture, combining full-stack development with a clear business and security vision.",
+        "goal": "My goal is to design digital experiences that are elegant for the user and resilient for the business, with a special interest in cybersecurity and automation.",
+        "learning": "Currently expanding my training in security, cloud, and modern architectural patterns.",
+        "tags": {
+            "fullstack": "Full-stack",
+            "architecture": "Architecture",
+            "cybersecurity": "Cybersecurity",
+            "automation": "Automation"
+        },
+        "timeline": {
+            "title": "Education Timeline",
+            "degree": {
+                "title": "Degree in Computer Engineering - Software Engineering",
+                "institution": "University of Seville",
+                "status": "Finished",
+                "milestones": [
+                    "Modern architectures",
+                    "Cybersecurity",
+                    "Full-stack development"
+                ],
+                "description": "Training focused on software design, agile methodologies, and building scalable solutions with a focus on quality."
+            },
+            "english": {
+                "title": "B2 English Certification",
+                "institution": "Cambridge English",
+                "status": "Finished",
+                "milestones": [
+                    "Professional communication",
+                    "Presentations",
+                    "Technical documentation"
+                ],
+                "description": "Reinforcement of linguistic skills oriented to professional and technical contexts."
+            },
+            "baccalaureate": {
+                "title": "Science Baccalaureate",
+                "institution": "Colegio Marista Nuestra Señora del Carmen",
+                "status": "Finished",
+                "milestones": [
+                    "Analytical thinking",
+                    "Scientific bases",
+                    "Collaborative work"
+                ],
+                "description": "Specialization in science with a focus on critical thinking and problem solving."
+            }
+        },
+        "courses": {
+            "title": "Courses and Continuous Training",
+            "cybersecurity": {
+                "title": "Cybersecurity Specialization",
+                "provider": "Online platform",
+                "status": "In progress",
+                "description": "Continuous update on vulnerability detection, OWASP, and hardening."
+            },
+            "docker": {
+                "title": "Docker & DevOps Fundamentals",
+                "provider": "Technical academy",
+                "status": "Completed",
+                "description": "Best practices for deployment, orchestration, and automation."
+            },
+            "backend": {
+                "title": "Backend Architectures with Java",
+                "provider": "Intensive bootcamp",
+                "status": "Completed",
+                "description": "API design, automated testing, and service security."
+            },
+            "badges": {
+                "certified": "Certified",
+                "formative": "Formative"
+            }
+        }
+    },
+    "technologies": {
+        "title": "Technologies & Tools",
+        "description": "I work with a modern and versatile stack, combining advanced front-end, robust back-end, and security practices to deliver reliable products.",
+        "carousel": {
+            "title": "Stack in Motion",
+            "subtitle": "Dynamic carousel of key technologies"
+        },
+        "domains": {
+            "frontend": {
+                "title": "Experiential Frontend",
+                "description": "Fast, responsive interfaces with motion design built to convert."
+            },
+            "backend": {
+                "title": "Solid Backend",
+                "description": "Secure APIs, clean architecture, and focus on scalability."
+            },
+            "cybersecurity": {
+                "title": "Applied Cybersecurity",
+                "description": "OWASP best practices, encryption, and integrated risk analysis."
+            },
+            "devops": {
+                "title": "Automation & DevOps",
+                "description": "Pipelines, containers, and continuous delivery to accelerate teams."
+            }
+        }
+    },
+    "projects": {
+        "title": "Projects",
+        "badge": "Featured and Evolving Projects",
+        "description": "Each project represents a piece of my professional journey. Here I show the technical essence and key details to understand the impact of each solution.",
+        "card": {
+            "details": "Project Details",
+            "links": "Repository",
+            "publication": "Publication",
+            "landing": "Landing"
+        },
+        "items": {
+            "municipal": {
+                "title": "Municipal Sports Management",
+                "summary": "System for sports reservations in small municipalities.",
+                "description": "Final degree project focused on centralizing reservations, managing capacity, and digitizing local processes with a clear and accessible UI.",
+                "highlights": [
+                    "Monolithic architecture",
+                    "Reservation flows",
+                    "Administrative panel"
+                ]
+            },
+            "mapyourworld": {
+                "title": "MapYourWorld",
+                "summary": "Gamified app to explore the world by districts.",
+                "description": "Geolocated application with challenges and rewards, integrating collaborative maps and real-time progress.",
+                "highlights": [
+                    "Interactive maps",
+                    "Gamification",
+                    "Freemium model"
+                ]
+            },
+            "portfolio": {
+                "title": "Portfolio Experience",
+                "summary": "Interactive portfolio with motion and responsive design.",
+                "description": "Digital experience designed to present projects with animations, dark mode, and high-impact visual components.",
+                "highlights": [
+                    "Motion design",
+                    "Reusable components",
+                    "Dynamic theme"
+                ]
+            },
+            "remote": {
+                "title": "Remote Sensing",
+                "summary": "Satellite image analysis for environmental changes.",
+                "description": "Multispectral data processing with NDVI and coverage classification to evaluate environmental impact.",
+                "highlights": [
+                    "NDVI",
+                    "Atmospheric correction",
+                    "Classification"
+                ]
+            }
+        }
+    },
+    "contact": {
+        "title": "Let's Talk",
+        "description": "Do you have an idea in mind or are you looking for a technical profile with business vision? I am available for new challenges. Let's connect!",
+        "copy": "Copy",
+        "copied": "Copied!",
+        "social": {
+            "email": "Email",
+            "linkedin": "LinkedIn",
+            "github": "GitHub"
+        }
+    }
+}
