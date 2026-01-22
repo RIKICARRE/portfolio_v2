@@ -9,7 +9,7 @@ import { CVSelection } from "@/components/cv-selection";
 import { SectionsMenu } from "@/components/sections-menu";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { useTranslation } from 'react-i18next';
-import HomePage from "@/components/pages/Home";
+import HomePage from "@/components/sections/Home";
 import AboutSection from "@/components/sections/About";
 import TechnologiesSection from "@/components/sections/Technologies";
 import ProjectsSection from "@/components/sections/Projects";
@@ -28,8 +28,8 @@ function App() {
       <div className="relative min-h-screen w-full overflow-x-hidden">
         <RetroGrid lightLineColor='green' darkLineColor='green' className="fixed inset-0 w-full h-full -z-10" />
 
-        <main className="relative z-10 flex flex-col gap-24 pb-32 pt-16">
-          <section id="home" className="relative flex min-h-screen items-center justify-center px-4">
+        <main className="relative z-10 flex flex-col gap-24 pb-32">
+          <section id="home" className="relative flex min-h-[100dvh] w-full items-center justify-center px-4">
             <HomePage />
           </section>
 
@@ -89,9 +89,9 @@ function App() {
               </LinkPreview>
             </DockIcon>
             <DockIcon>
-              <LinkPreview url="https://www.linkedin.com/in/ricardo-carreno-939b78338" width={300} height={200}>
+              <LinkPreview url="https://www.linkedin.com/in/ricardo-carreno-marino" width={300} height={200}>
                 <a
-                  href="https://www.linkedin.com/in/ricardo-carreno-939b78338"
+                  href="https://www.linkedin.com/in/ricardo-carreno-marino"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"

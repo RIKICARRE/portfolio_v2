@@ -60,23 +60,23 @@
         },
         "courses": {
             "title": "Cursos y formación continua",
-            "cybersecurity": {
-                "title": "Especialización en Ciberseguridad",
-                "provider": "Plataforma online",
+            "aws": {
+                "title": "AWS Cloud Practitioner Essentials",
+                "provider": "AWS Training & Certification",
+                "status": "Completado",
+                "description": "Fundamentos de la nube de Amazon Web Services, modelos de despliegue y servicios core."
+            },
+            "cisco": {
+                "title": "Introducción a la Ciberseguridad",
+                "provider": "Cisco Networking Academy",
                 "status": "En curso",
-                "description": "Actualización continua sobre detección de vulnerabilidades, OWASP y hardening."
+                "description": "Principios fundamentales de seguridad de redes, amenazas modernas y protección de datos."
             },
-            "docker": {
-                "title": "Docker & DevOps Fundamentals",
-                "provider": "Academia técnica",
-                "status": "Completado",
-                "description": "Buenas prácticas de despliegue, orquestación y automatización."
-            },
-            "backend": {
-                "title": "Arquitecturas Backend con Java",
-                "provider": "Bootcamp intensivo",
-                "status": "Completado",
-                "description": "Diseño de APIs, pruebas automatizadas y seguridad en servicios."
+            "comptia": {
+                "title": "CompTIA Security+",
+                "provider": "Ciberext - Junta de Extremadura",
+                "status": "En curso",
+                "description": "Curso intensivo de preparación para la certificación oficial de seguridad informática."
             },
             "badges": {
                 "certified": "Certificado",
@@ -172,6 +172,10 @@
             "email": "Email",
             "linkedin": "LinkedIn",
             "github": "GitHub"
+        },
+        "social_desc": {
+            "linkedin": "Actividad profesional, certificaciones y networking.",
+            "github": "Repositorios, contribuciones y proyectos activos."
         }
     }
 }

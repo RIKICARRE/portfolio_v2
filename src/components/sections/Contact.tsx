@@ -17,14 +17,14 @@ const ContactSection = () => {
     },
     {
       title: t('contact.social.linkedin'),
-      description: "Actividad profesional, certificaciones y networking.",
-      value: "linkedin.com/in/ricardo-carreno-939b78338",
-      href: "https://www.linkedin.com/in/ricardo-carreno-939b78338",
+      description: t('contact.social_desc.linkedin'),
+      value: "linkedin.com/in/ricardo-carreno-marino",
+      href: "https://www.linkedin.com/in/ricardo-carreno-marino",
       icon: Linkedin,
     },
     {
       title: t('contact.social.github'),
-      description: "Repositorios, contribuciones y proyectos activos.",
+      description: t('contact.social_desc.github'),
       value: "github.com/RIKICARRE",
       href: "https://github.com/RIKICARRE",
       icon: Github,

@@ -4,7 +4,7 @@ import { BlurFade } from "@/components/magicui/blur-fade";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { ShineBorder } from "@/components/magicui/shine-border";
 import { motion } from "framer-motion";
-import { Award, BadgeCheck, GraduationCap, Sparkles } from "lucide-react";
+import { Award, BadgeCheck, GraduationCap, Sparkles, Globe, Linkedin } from "lucide-react";
 import { useTranslation, Trans } from 'react-i18next';
 
 const AboutSection = () => {
@@ -39,25 +39,31 @@ const AboutSection = () => {
 
   const courses = [
     {
-      title: t('about.courses.cybersecurity.title'),
-      provider: t('about.courses.cybersecurity.provider'),
-      status: t('about.courses.cybersecurity.status'),
+      title: t('about.courses.aws.title'),
+      provider: t('about.courses.aws.provider'),
+      status: t('about.courses.aws.status'),
       certified: false,
-      description: t('about.courses.cybersecurity.description'),
+      description: t('about.courses.aws.description'),
+      link: "https://skillbuilder.aws/learn/94T2BEN85A/aws-cloud-practitioner-essentials-espaol-de-espaa/22YKTHGJVW",
+      linkedin: "https://www.linkedin.com/in/ricardo-carreno-939b78338/overlay/1766437097144/single-media-viewer?type=DOCUMENT&profileId=ACoAAFTj9j0BdtL40ztZ-kLvrFl6ZSwcvm1NbhE&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Be8yVZQtFRvC7%2BJZ3DSVBBA%3D%3D",
     },
     {
-      title: t('about.courses.docker.title'),
-      provider: t('about.courses.docker.provider'),
-      status: t('about.courses.docker.status'),
+      title: t('about.courses.cisco.title'),
+      provider: t('about.courses.cisco.provider'),
+      status: t('about.courses.cisco.status'),
       certified: true,
-      description: t('about.courses.docker.description'),
+      description: t('about.courses.cisco.description'),
+      link: "https://www.netacad.com/courses/introduction-to-cybersecurity?courseLang=es-XL",
+      //linkedin: "https://www.linkedin.com/in/ricardocarrenocl/",
     },
     {
-      title: t('about.courses.backend.title'),
-      provider: t('about.courses.backend.provider'),
-      status: t('about.courses.backend.status'),
-      certified: true,
-      description: t('about.courses.backend.description'),
+      title: t('about.courses.comptia.title'),
+      provider: t('about.courses.comptia.provider'),
+      status: t('about.courses.comptia.status'),
+      certified: false,
+      description: t('about.courses.comptia.description'),
+      link: "https://www.ciberext.es/cursos.php",
+      //linkedin: "https://www.linkedin.com/in/ricardocarrenocl/",
     },
   ];
 
@@ -194,9 +200,33 @@ const AboutSection = () => {
                   )}
                 </div>
                 <p className="relative mt-4 text-sm text-muted-foreground">{course.description}</p>
-                <span className="relative mt-4 inline-flex rounded-full border border-border/60 px-3 py-1 text-xs text-muted-foreground">
-                  {course.status}
-                </span>
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="relative inline-flex rounded-full border border-border/60 px-3 py-1 text-xs text-muted-foreground">
+                    {course.status}
+                  </span>
+                  <div className="flex gap-2">
+                    <a
+                      href={course.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="relative inline-flex items-center gap-2 rounded-lg bg-primary/10 px-3 py-2 text-xs font-medium text-primary transition-colors hover:bg-primary/20"
+                      aria-label="Course Website"
+                    >
+                      <Globe className="h-4 w-4" />
+                    </a>
+                    {course.linkedin && (
+                      <a
+                        href={course.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="relative inline-flex items-center gap-2 rounded-lg bg-[#0077b5]/10 px-3 py-2 text-xs font-medium text-[#0077b5] transition-colors hover:bg-[#0077b5]/20"
+                        aria-label="LinkedIn Profile"
+                      >
+                        <Linkedin className="h-4 w-4" />
+                      </a>
+                    )}
+                  </div>
+                </div>
               </motion.div>
             ))}
           </div>

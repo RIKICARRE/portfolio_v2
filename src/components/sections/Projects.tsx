@@ -104,7 +104,7 @@ const ProjectsSection = () => {
             <CardContainer>
               <div className="group relative h-full overflow-hidden rounded-[28px] border border-border/60 bg-card/70 p-6 shadow-xl">
                 <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} borderWidth={1} />
-                <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-emerald-500/10" />
                 </div>
                 <div className="relative space-y-5">
@@ -154,7 +154,7 @@ const ProjectsSection = () => {
                     </ul>
                   </details>
 
-                  <div className="flex flex-wrap gap-3">
+                  <CardItem translateZ={20} className="flex flex-wrap gap-3">
                     {project.links.map((link) => (
                       <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer">
                         <RainbowButton>
@@ -163,7 +163,7 @@ const ProjectsSection = () => {
                         </RainbowButton>
                       </a>
                     ))}
-                  </div>
+                  </CardItem>
                 </div>
               </div>
             </CardContainer>
