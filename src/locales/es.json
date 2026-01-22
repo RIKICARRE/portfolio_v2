@@ -1,0 +1,181 @@
+{
+    "dock": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "technologies": "Tecnologías",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "home": {
+        "greeting": "Soy <1>Ricardo</1>, graduado en Ingeniería del Software",
+        "description": "Full-stack developer con foco en Java, Spring Boot y React. Me apasiona construir aplicaciones seguras, centradas en el usuario y con arquitecturas escalables.",
+        "scroll": "Sigue bajando para conocer más"
+    },
+    "about": {
+        "title": "Sobre mí",
+        "intro": "Soy <1>Ricardo Carreño</1>, graduado en Ingeniería del Software. Me enfoco en construir productos digitales seguros, usables y con arquitectura sólida, combinando desarrollo full-stack con una visión clara de negocio y seguridad.",
+        "goal": "Mi objetivo es diseñar experiencias digitales que sean elegantes para el usuario y resistentes para el negocio, con especial interés en ciberseguridad y automatización.",
+        "learning": "Actualmente sigo ampliando mi formación en seguridad, cloud y patrones de arquitectura modernos.",
+        "tags": {
+            "fullstack": "Full-stack",
+            "architecture": "Arquitectura",
+            "cybersecurity": "Ciberseguridad",
+            "automation": "Automatización"
+        },
+        "timeline": {
+            "title": "Cronología de formación",
+            "degree": {
+                "title": "Grado en Ingeniería Informática - Ingeniería del Software",
+                "institution": "Universidad de Sevilla",
+                "status": "Finalizado",
+                "milestones": [
+                    "Arquitecturas modernas",
+                    "Ciberseguridad",
+                    "Desarrollo full-stack"
+                ],
+                "description": "Formación centrada en diseño de software, metodologías ágiles y construcción de soluciones escalables con foco en calidad."
+            },
+            "english": {
+                "title": "Certificación de Inglés B2",
+                "institution": "Cambridge English",
+                "status": "Finalizado",
+                "milestones": [
+                    "Comunicación profesional",
+                    "Presentaciones",
+                    "Documentación técnica"
+                ],
+                "description": "Refuerzo de habilidades lingüísticas orientadas a contextos profesionales y técnicos."
+            },
+            "baccalaureate": {
+                "title": "Bachillerato en Ciencias",
+                "institution": "Colegio Marista Nuestra Señora del Carmen",
+                "status": "Finalizado",
+                "milestones": [
+                    "Pensamiento analítico",
+                    "Bases científicas",
+                    "Trabajo colaborativo"
+                ],
+                "description": "Especialización en ciencias con enfoque en pensamiento crítico y resolución de problemas."
+            }
+        },
+        "courses": {
+            "title": "Cursos y formación continua",
+            "aws": {
+                "title": "AWS Cloud Practitioner Essentials",
+                "provider": "AWS Training & Certification",
+                "status": "Completado",
+                "description": "Fundamentos de la nube de Amazon Web Services, modelos de despliegue y servicios core."
+            },
+            "cisco": {
+                "title": "Introducción a la Ciberseguridad",
+                "provider": "Cisco Networking Academy",
+                "status": "En curso",
+                "description": "Principios fundamentales de seguridad de redes, amenazas modernas y protección de datos."
+            },
+            "comptia": {
+                "title": "CompTIA Security+",
+                "provider": "Ciberext - Junta de Extremadura",
+                "status": "En curso",
+                "description": "Curso intensivo de preparación para la certificación oficial de seguridad informática."
+            },
+            "badges": {
+                "certified": "Certificado",
+                "formative": "Formativo"
+            }
+        }
+    },
+    "technologies": {
+        "title": "Tecnologías & Herramientas",
+        "description": "Trabajo con un stack moderno y versátil, combinando front-end avanzado, back-end robusto y prácticas de seguridad para entregar productos confiables.",
+        "carousel": {
+            "title": "Stack en movimiento",
+            "subtitle": "Carrusel dinámico de tecnologías clave"
+        },
+        "domains": {
+            "frontend": {
+                "title": "Frontend experiencial",
+                "description": "Interfaces rápidas, responsivas y con motion design pensado para convertir."
+            },
+            "backend": {
+                "title": "Backend sólido",
+                "description": "APIs seguras, arquitectura limpia y foco en escalabilidad."
+            },
+            "cybersecurity": {
+                "title": "Ciberseguridad aplicada",
+                "description": "Buenas prácticas OWASP, cifrado y análisis de riesgos integrados."
+            },
+            "devops": {
+                "title": "Automatización & DevOps",
+                "description": "Pipelines, contenedores y entregas continuas para acelerar equipos."
+            }
+        }
+    },
+    "projects": {
+        "title": "Proyectos",
+        "badge": "Proyectos destacados y en evolución",
+        "description": "Cada proyecto representa una pieza de mi recorrido profesional. Aquí muestro la esencia técnica y los detalles clave para entender el impacto de cada solución.",
+        "card": {
+            "details": "Detalles del proyecto",
+            "links": "Repositorio",
+            "publication": "Publicación",
+            "landing": "Landing"
+        },
+        "items": {
+            "municipal": {
+                "title": "Municipal Sports Management",
+                "summary": "Sistema para reservas deportivas en municipios pequeños.",
+                "description": "Proyecto final de grado enfocado en centralizar reservas, gestionar aforos y digitalizar procesos locales con una UI clara y accesible.",
+                "highlights": [
+                    "Arquitectura monolítica",
+                    "Flujos de reserva",
+                    "Panel administrativo"
+                ]
+            },
+            "mapyourworld": {
+                "title": "MapYourWorld",
+                "summary": "App gamificada para explorar el mundo por distritos.",
+                "description": "Aplicación geolocalizada con desafíos y recompensas, que integra mapas colaborativos y progreso en tiempo real.",
+                "highlights": [
+                    "Mapas interactivos",
+                    "Gamificación",
+                    "Modelo freemium"
+                ]
+            },
+            "portfolio": {
+                "title": "Portfolio Experience",
+                "summary": "Portafolio interactivo con motion y diseño responsive.",
+                "description": "Experiencia digital pensada para presentar proyectos con animaciones, dark mode y componentes visuales de alto impacto.",
+                "highlights": [
+                    "Motion design",
+                    "Componentes reutilizables",
+                    "Tema dinámico"
+                ]
+            },
+            "remote": {
+                "title": "Remote Sensing",
+                "summary": "Análisis de imágenes satelitales para cambios ambientales.",
+                "description": "Procesamiento de datos multiespectrales con NDVI y clasificación de cobertura para evaluar impacto en el entorno.",
+                "highlights": [
+                    "NDVI",
+                    "Corrección atmosférica",
+                    "Clasificación"
+                ]
+            }
+        }
+    },
+    "contact": {
+        "title": "Hablemos",
+        "description": "¿Tienes una idea en mente o buscas un perfil técnico con visión de negocio? Estoy disponible para nuevos retos. ¡Conectemos!",
+        "copy": "Copiar",
+        "copied": "¡Copiado!",
+        "social": {
+            "email": "Email",
+            "linkedin": "LinkedIn",
+            "github": "GitHub"
+        },
+        "social_desc": {
+            "linkedin": "Actividad profesional, certificaciones y networking.",
+            "github": "Repositorios, contribuciones y proyectos activos."
+        }
+    }
+}
