@@ -1,7 +1,6 @@
 import './App.css'
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { Github, Home, Linkedin, Mail, FolderKanban, Cpu, User } from "lucide-react";
-import { RetroGrid } from "@/components/magicui/retro-grid";
 import { ThemeProvider } from "@/components/theme-provider";
 import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 import { LinkPreview } from "@/components/ui/link-preview";
@@ -14,6 +13,7 @@ import AboutSection from "@/components/sections/About";
 import TechnologiesSection from "@/components/sections/Technologies";
 import ProjectsSection from "@/components/sections/Projects";
 import ContactSection from "@/components/sections/Contact";
+import NeonScene from "@/components/three/NeonScene";
 
 function ModeDockIcon() {
   return (
@@ -25,32 +25,43 @@ function App() {
   const { t } = useTranslation();
   return (
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-      <div className="relative min-h-screen w-full overflow-x-hidden">
-        <RetroGrid lightLineColor='green' darkLineColor='green' className="fixed inset-0 w-full h-full -z-10" />
+      <div className="neon-app relative min-h-screen w-full overflow-x-hidden">
+        <NeonScene />
+        <div className="neon-atmosphere fixed inset-0" aria-hidden="true" />
 
-        <main className="relative z-10 flex flex-col gap-24 pb-32">
+        <main className="relative z-10 flex flex-col gap-16 pb-32">
           <section id="home" className="relative flex min-h-[100dvh] w-full items-center justify-center px-4">
-            <HomePage />
+            <div className="three-shell three-shell-hero">
+              <HomePage />
+            </div>
           </section>
 
-          <section id="about" className="scroll-mt-24">
-            <AboutSection />
+          <section id="about" className="scroll-mt-24 px-2 md:px-4">
+            <div className="three-shell">
+              <AboutSection />
+            </div>
           </section>
 
-          <section id="technologies" className="scroll-mt-24">
-            <TechnologiesSection />
+          <section id="technologies" className="scroll-mt-24 px-2 md:px-4">
+            <div className="three-shell">
+              <TechnologiesSection />
+            </div>
           </section>
 
-          <section id="projects" className="scroll-mt-24">
-            <ProjectsSection />
+          <section id="projects" className="scroll-mt-24 px-2 md:px-4">
+            <div className="three-shell">
+              <ProjectsSection />
+            </div>
           </section>
 
-          <section id="contact" className="scroll-mt-24">
-            <ContactSection />
+          <section id="contact" className="scroll-mt-24 px-2 md:px-4">
+            <div className="three-shell mb-12">
+              <ContactSection />
+            </div>
           </section>
         </main>
 
-        <div className="fixed bottom-0 left-0 w-full flex justify-center z-20 pb-4">
+        <div className="fixed bottom-0 left-0 z-20 flex w-full justify-center pb-4">
           <Dock className="shadow-lg">
             <DockIcon className="flex md:hidden">
               <SectionsMenu />
