@@ -8,19 +8,34 @@
     },
     "home": {
         "greeting": "I'm <1>Ricardo</1>, Software Engineering Graduate",
-        "description": "Full-stack developer focused on Java, Spring Boot, and React. Passionate about building secure, user-centric applications with scalable architectures.",
+        "description": "Full-stack software engineer focused on Java, Spring Boot, and React, currently working at Impulsa Dirección de Proyectos. Passionate about building secure, user-centric applications with scalable architectures.",
         "scroll": "Scroll down for more"
     },
     "about": {
         "title": "About Me",
-        "intro": "I'm <1>Ricardo Carreño</1>, a Software Engineering Graduate. I focus on building secure, usable digital products with solid architecture, combining full-stack development with a clear business and security vision.",
+        "intro": "I'm <1>Ricardo Carreño</1>, a Software Engineering graduate. I currently work at Impulsa Dirección de Proyectos, combining software development with technical documentation and project support.",
         "goal": "My goal is to design digital experiences that are elegant for the user and resilient for the business, with a special interest in cybersecurity and automation.",
-        "learning": "Currently expanding my training in security, cloud, and modern architectural patterns.",
+        "learning": "Currently expanding my cybersecurity and architecture training, with active preparation for the CompTIA Security+ certification.",
         "tags": {
             "fullstack": "Full-stack",
             "architecture": "Architecture",
             "cybersecurity": "Cybersecurity",
             "automation": "Automation"
+        },
+        "experience": {
+            "title": "Professional Experience",
+            "role": "Software Project and Technical Documentation Specialist",
+            "company": "Impulsa Dirección de Proyectos",
+            "location": "Badajoz",
+            "period": "March 2026 — Present",
+            "status": "Current",
+            "description": "Joined the team to contribute to software development initiatives and to prepare project reports and technical documentation for grant management and processing.",
+            "highlights": [
+                "Software development",
+                "Technical documentation",
+                "Document analysis and structuring",
+                "Technical-administrative support"
+            ]
         },
         "timeline": {
             "title": "Education Timeline",
@@ -69,14 +84,26 @@
             "cisco": {
                 "title": "Introduction to Cybersecurity",
                 "provider": "Cisco Networking Academy",
-                "status": "In progress",
-                "description": "Fundamental principles of network security, modern threats, and data protection."
+                "status": "Completed",
+                "description": "Core cybersecurity concepts, threats, network security fundamentals, basic cryptography, and best practices."
+            },
+            "ibm": {
+                "title": "Introduction to Cybersecurity Essentials",
+                "provider": "IBM · Coursera",
+                "status": "Completed",
+                "description": "Training in cybersecurity fundamentals, common threats, information protection, risk management, and practical labs."
             },
             "comptia": {
-                "title": "CompTIA Security+",
+                "title": "CompTIA Security+ Preparation (CiberExt)",
                 "provider": "Ciberext - Junta de Extremadura",
                 "status": "In progress",
-                "description": "Intensive preparation course for the official computer security certification."
+                "description": "Virtual classes are completed; currently finishing practical exercises and preparing for the final exam."
+            },
+            "comptiaPrep": {
+                "title": "CompTIA Security+ Certification Preparation",
+                "provider": "Independent study and practice",
+                "status": "In preparation",
+                "description": "Parallel certification-focused preparation to consolidate Security+ exam readiness."
             },
             "badges": {
                 "certified": "Certified",

@@ -8,22 +8,37 @@
     },
     "home": {
         "greeting": "Soy <1>Ricardo</1>, graduado en Ingeniería del Software",
-        "description": "Full-stack developer con foco en Java, Spring Boot y React. Me apasiona construir aplicaciones seguras, centradas en el usuario y con arquitecturas escalables.",
+        "description": "Ingeniero de software full-stack enfocado en Java, Spring Boot y React, actualmente en Impulsa Dirección de Proyectos. Me apasiona construir aplicaciones seguras, centradas en el usuario y con arquitecturas escalables.",
         "scroll": "Sigue bajando para conocer más"
     },
     "about": {
         "title": "Sobre mí",
-        "intro": "Soy <1>Ricardo Carreño</1>, graduado en Ingeniería del Software. Me enfoco en construir productos digitales seguros, usables y con arquitectura sólida, combinando desarrollo full-stack con una visión clara de negocio y seguridad.",
+        "intro": "Soy <1>Ricardo Carreño</1>, graduado en Ingeniería del Software. Actualmente trabajo en Impulsa Dirección de Proyectos, donde combino desarrollo de software con documentación técnica y apoyo a proyectos.",
         "goal": "Mi objetivo es diseñar experiencias digitales que sean elegantes para el usuario y resistentes para el negocio, con especial interés en ciberseguridad y automatización.",
-        "learning": "Actualmente sigo ampliando mi formación en seguridad, cloud y patrones de arquitectura modernos.",
+        "learning": "Actualmente sigo ampliando mi formación en ciberseguridad y arquitectura, con preparación activa para la certificación CompTIA Security+.",
         "tags": {
             "fullstack": "Full-stack",
             "architecture": "Arquitectura",
             "cybersecurity": "Ciberseguridad",
             "automation": "Automatización"
         },
+        "experience": {
+            "title": "Experiencia profesional",
+            "role": "Técnico de Proyectos de Software y Documentación Técnica",
+            "company": "Impulsa Dirección de Proyectos",
+            "location": "Badajoz",
+            "period": "Marzo 2026 — Actualidad",
+            "status": "Actual",
+            "description": "Incorporación orientada a iniciativas de desarrollo de software y elaboración de memorias/documentación técnica para la gestión y tramitación de subvenciones.",
+            "highlights": [
+                "Desarrollo de software",
+                "Documentación técnica",
+                "Análisis y estructuración documental",
+                "Soporte técnico-administrativo"
+            ]
+        },
         "timeline": {
-            "title": "Cronología de formación",
+            "title": "Cronología académica",
             "degree": {
                 "title": "Grado en Ingeniería Informática - Ingeniería del Software",
                 "institution": "Universidad de Sevilla",
@@ -69,14 +84,26 @@
             "cisco": {
                 "title": "Introducción a la Ciberseguridad",
                 "provider": "Cisco Networking Academy",
-                "status": "En curso",
-                "description": "Principios fundamentales de seguridad de redes, amenazas modernas y protección de datos."
+                "status": "Completado",
+                "description": "Conceptos clave de ciberseguridad, amenazas, fundamentos de redes seguras, criptografía básica y buenas prácticas."
+            },
+            "ibm": {
+                "title": "Introducción a los fundamentos de ciberseguridad",
+                "provider": "IBM · Coursera",
+                "status": "Completado",
+                "description": "Formación en fundamentos, amenazas comunes, protección de la información, gestión de riesgos y laboratorios prácticos."
             },
             "comptia": {
-                "title": "CompTIA Security+",
+                "title": "Preparación CompTIA Security+ (CiberExt)",
                 "provider": "Ciberext - Junta de Extremadura",
                 "status": "En curso",
-                "description": "Curso intensivo de preparación para la certificación oficial de seguridad informática."
+                "description": "Fase virtual finalizada; actualmente en prácticas y preparación del examen final del programa."
+            },
+            "comptiaPrep": {
+                "title": "Preparación de certificación CompTIA Security+",
+                "provider": "Estudio y práctica individual",
+                "status": "En preparación",
+                "description": "Preparación paralela al curso para consolidar conocimientos orientados al examen oficial Security+."
             },
             "badges": {
                 "certified": "Certificado",

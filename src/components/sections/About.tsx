@@ -4,7 +4,7 @@ import { BlurFade } from "@/components/magicui/blur-fade";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { ShineBorder } from "@/components/magicui/shine-border";
 import { motion } from "framer-motion";
-import { Award, BadgeCheck, GraduationCap, Sparkles, Globe, Linkedin } from "lucide-react";
+import { Award, BadgeCheck, BriefcaseBusiness, GraduationCap, Sparkles, Globe, Linkedin } from "lucide-react";
 import { useTranslation, Trans } from 'react-i18next';
 
 const AboutSection = () => {
@@ -54,7 +54,14 @@ const AboutSection = () => {
       certified: true,
       description: t('about.courses.cisco.description'),
       link: "https://www.netacad.com/courses/introduction-to-cybersecurity?courseLang=es-XL",
-      //linkedin: "https://www.linkedin.com/in/ricardocarrenocl/",
+    },
+    {
+      title: t('about.courses.ibm.title'),
+      provider: t('about.courses.ibm.provider'),
+      status: t('about.courses.ibm.status'),
+      certified: true,
+      description: t('about.courses.ibm.description'),
+      link: "https://www.coursera.org",
     },
     {
       title: t('about.courses.comptia.title'),
@@ -63,7 +70,14 @@ const AboutSection = () => {
       certified: false,
       description: t('about.courses.comptia.description'),
       link: "https://www.ciberext.es/cursos.php",
-      //linkedin: "https://www.linkedin.com/in/ricardocarrenocl/",
+    },
+    {
+      title: t('about.courses.comptiaPrep.title'),
+      provider: t('about.courses.comptiaPrep.provider'),
+      status: t('about.courses.comptiaPrep.status'),
+      certified: false,
+      description: t('about.courses.comptiaPrep.description'),
+      link: "https://www.comptia.org/certifications/security",
     },
   ];
 
@@ -114,6 +128,43 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
+      </BlurFade>
+
+      <BlurFade>
+        <section className="relative overflow-hidden rounded-[28px] border border-border/60 bg-card/70 p-8 shadow-xl">
+          <ShineBorder shineColor={["#3B82F6", "#22C55E", "#06B6D4"]} borderWidth={2} />
+          <div className="mb-8 flex items-center gap-3">
+            <BriefcaseBusiness className="h-6 w-6 text-primary" />
+            <h3 className="text-2xl font-semibold">{t('about.experience.title')}</h3>
+          </div>
+          <motion.article
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+            className="rounded-2xl border border-border/60 bg-background/70 p-6 shadow-sm"
+          >
+            <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+              <span className="rounded-full border border-border/60 px-2 py-0.5">{t('about.experience.period')}</span>
+              <span className="rounded-full bg-primary/10 px-2 py-0.5 text-primary">{t('about.experience.status')}</span>
+            </div>
+            <h4 className="mt-3 text-lg font-semibold text-foreground">{t('about.experience.role')}</h4>
+            <p className="text-sm text-muted-foreground">
+              {t('about.experience.company')} · {t('about.experience.location')}
+            </p>
+            <p className="mt-3 text-sm text-muted-foreground">{t('about.experience.description')}</p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {(t('about.experience.highlights', { returnObjects: true }) as string[]).map((highlight) => (
+                <span
+                  key={highlight}
+                  className="rounded-full bg-muted px-3 py-1 text-xs font-medium text-muted-foreground"
+                >
+                  {highlight}
+                </span>
+              ))}
+            </div>
+          </motion.article>
+        </section>
       </BlurFade>
 
       <BlurFade>
