@@ -7,29 +7,29 @@
         "contact": "Contact"
     },
     "home": {
-        "greeting": "I'm <1>Ricardo</1>, Software Engineering Graduate",
-        "description": "Full-stack software engineer focused on Java, Spring Boot, and React, currently working at Impulsa Dirección de Proyectos. Passionate about building secure, user-centric applications with scalable architectures.",
+        "greeting": "I'm <1>Ricardo Carreño Mariño</1>, a software engineer and Cybersecurity master's student",
+        "description": "I'm based in Seville and actively seeking a junior role in software development or cybersecurity, with a particular interest in application security. I'm open to on-site or hybrid roles in Seville and remote opportunities across Spain.",
         "scroll": "Scroll down for more"
     },
     "about": {
         "title": "About Me",
-        "intro": "I'm <1>Ricardo Carreño</1>, a Software Engineering graduate. I currently work at Impulsa Dirección de Proyectos, combining software development with technical documentation and project support.",
-        "goal": "My goal is to design digital experiences that are elegant for the user and resilient for the business, with a special interest in cybersecurity and automation.",
-        "learning": "Currently expanding my cybersecurity and architecture training, with active preparation for the CompTIA Security+ certification.",
+        "intro": "I'm <1>Ricardo Carreño Mariño</1>, a Software Engineering graduate from the University of Seville. From March to September 2026, I worked at Impulsa Dirección de Proyectos, where I developed two websites for tourism and civic participation and prepared reports and technical documentation for grant applications and administration.",
+        "goal": "This experience strengthened my interest in building useful, reliable software. In both projects, I worked with authentication, access controls, and Supabase RLS policies.",
+        "learning": "Since September 2026, I have been studying for a University Master's Degree in Cybersecurity at UNIR. I want to keep growing as a software engineer while moving towards application security.",
         "tags": {
-            "fullstack": "Full-stack",
-            "architecture": "Architecture",
+            "fullstack": "Software development",
+            "architecture": "Application security",
             "cybersecurity": "Cybersecurity",
-            "automation": "Automation"
+            "automation": "Actively seeking roles"
         },
         "experience": {
             "title": "Professional Experience",
             "role": "Software Project and Technical Documentation Specialist",
             "company": "Impulsa Dirección de Proyectos",
             "location": "Badajoz",
-            "period": "March 2026 — Present",
-            "status": "Current",
-            "description": "Joined the team to contribute to software development initiatives and to prepare project reports and technical documentation for grant management and processing.",
+            "period": "March — September 2026",
+            "status": "Completed",
+            "description": "I developed two websites deployed on Vercel and integrated with Supabase: a tourism and civic participation platform for the Mancomunidad del Valle del Jerte, and a tourism portal for Valdehornillos. I also prepared reports and technical documentation for grant applications and administration.",
             "highlights": [
                 "Software development",
                 "Technical documentation",
@@ -39,8 +39,18 @@
         },
         "timeline": {
             "title": "Education Timeline",
+            "master": {
+                "title": "University Master's Degree in Cybersecurity",
+                "institution": "UNIR",
+                "status": "In progress",
+                "milestones": [
+                    "Cybersecurity"
+                ],
+                "description": "In progress since September 2026.",
+                "period": "September 2026 — Present"
+            },
             "degree": {
-                "title": "Degree in Computer Engineering - Software Engineering",
+                "title": "Degree in Software Engineering",
                 "institution": "University of Seville",
                 "status": "Finished",
                 "milestones": [
@@ -51,7 +61,7 @@
                 "description": "Training focused on software design, agile methodologies, and building scalable solutions with a focus on quality."
             },
             "english": {
-                "title": "B2 English Certification",
+                "title": "English B2",
                 "institution": "Cambridge English",
                 "status": "Finished",
                 "milestones": [
@@ -94,16 +104,10 @@
                 "description": "Training in cybersecurity fundamentals, common threats, information protection, risk management, and practical labs."
             },
             "comptia": {
-                "title": "CompTIA Security+ Preparation (CiberExt)",
+                "title": "CompTIA Security+ SY0-701 Exam Preparation",
                 "provider": "Ciberext - Junta de Extremadura",
-                "status": "In progress",
-                "description": "Virtual classes are completed; currently finishing practical exercises and preparing for the final exam."
-            },
-            "comptiaPrep": {
-                "title": "CompTIA Security+ Certification Preparation",
-                "provider": "Independent study and practice",
-                "status": "In preparation",
-                "description": "Parallel certification-focused preparation to consolidate Security+ exam readiness."
+                "status": "Completed · May 2026",
+                "description": "Preparation program for the CompTIA Security+ SY0-701 exam, completed in May 2026. Certificate of achievement."
             },
             "badges": {
                 "certified": "Certified",
@@ -113,86 +117,95 @@
     },
     "technologies": {
         "title": "Technologies & Tools",
-        "description": "I work with a modern and versatile stack, combining advanced front-end, robust back-end, and security practices to deliver reliable products.",
+        "description": "Experience building web applications with Next.js, React, TypeScript, and Tailwind CSS, alongside Supabase and PostgreSQL.",
         "carousel": {
             "title": "Stack in Motion",
             "subtitle": "Dynamic carousel of key technologies"
         },
         "domains": {
             "frontend": {
-                "title": "Experiential Frontend",
-                "description": "Fast, responsive interfaces with motion design built to convert."
+                "title": "Web development",
+                "description": "Web application development with Next.js, React, TypeScript, and Tailwind CSS.",
+                "stack": [
+                    "Next.js",
+                    "React",
+                    "TypeScript",
+                    "Tailwind CSS"
+                ]
             },
             "backend": {
-                "title": "Solid Backend",
-                "description": "Secure APIs, clean architecture, and focus on scalability."
+                "title": "Backend and data",
+                "description": "Worked with Supabase and PostgreSQL on applications with public features and management tools.",
+                "stack": [
+                    "Supabase",
+                    "PostgreSQL"
+                ]
             },
             "cybersecurity": {
-                "title": "Applied Cybersecurity",
-                "description": "OWASP best practices, encryption, and integrated risk analysis."
+                "title": "Application security",
+                "description": "Project experience with authentication, access controls, and Supabase RLS policies. Interested in continuing to develop my application security skills.",
+                "stack": [
+                    "Authentication",
+                    "Access controls",
+                    "Supabase RLS"
+                ]
             },
             "devops": {
-                "title": "Automation & DevOps",
-                "description": "Pipelines, containers, and continuous delivery to accelerate teams."
+                "title": "Deployment",
+                "description": "Projects deployed on Vercel and integrated with Supabase.",
+                "stack": [
+                    "Vercel",
+                    "Supabase"
+                ]
             }
         }
     },
     "projects": {
         "title": "Projects",
-        "badge": "Featured and Evolving Projects",
-        "description": "Each project represents a piece of my professional journey. Here I show the technical essence and key details to understand the impact of each solution.",
+        "badge": "Professional Projects",
+        "category": "Full-stack",
+        "description": "Two projects developed during my time at Impulsa Dirección de Proyectos.",
         "card": {
             "details": "Project Details",
             "links": "Repository",
             "publication": "Publication",
-            "landing": "Landing"
+            "landing": "Landing",
+            "website": "Visit project"
         },
         "items": {
-            "municipal": {
-                "title": "Municipal Sports Management",
-                "summary": "System for sports reservations in small municipalities.",
-                "description": "Final degree project focused on centralizing reservations, managing capacity, and digitizing local processes with a clear and accessible UI.",
+            "jerte": {
+                "title": "Pueblos Inteligentes · Mancomunidad del Valle del Jerte",
+                "summary": "A tourism resource and civic participation platform.",
+                "description": "I developed the website, which includes public interfaces and management dashboards, with authentication, access controls, and Supabase RLS policies.",
                 "highlights": [
-                    "Monolithic architecture",
-                    "Reservation flows",
-                    "Administrative panel"
+                    "Public interfaces",
+                    "Management dashboards",
+                    "Authentication, access controls, and RLS"
                 ]
             },
-            "mapyourworld": {
-                "title": "MapYourWorld",
-                "summary": "Gamified app to explore the world by districts.",
-                "description": "Geolocated application with challenges and rewards, integrating collaborative maps and real-time progress.",
+            "valdehornillos": {
+                "title": "Valdehornillos Turismo",
+                "summary": "A tourism portal focused on routes and local heritage.",
+                "description": "I developed the website, which has a public catalogue in Spanish and English and content management tools, as well as authentication, access controls, and Supabase RLS policies.",
                 "highlights": [
-                    "Interactive maps",
-                    "Gamification",
-                    "Freemium model"
-                ]
-            },
-            "portfolio": {
-                "title": "Portfolio Experience",
-                "summary": "Interactive portfolio with motion and responsive design.",
-                "description": "Digital experience designed to present projects with animations, dark mode, and high-impact visual components.",
-                "highlights": [
-                    "Motion design",
-                    "Reusable components",
-                    "Dynamic theme"
-                ]
-            },
-            "remote": {
-                "title": "Remote Sensing",
-                "summary": "Satellite image analysis for environmental changes.",
-                "description": "Multispectral data processing with NDVI and coverage classification to evaluate environmental impact.",
-                "highlights": [
-                    "NDVI",
-                    "Atmospheric correction",
-                    "Classification"
+                    "Public catalogue in Spanish and English",
+                    "Content management",
+                    "Authentication, access controls, and RLS"
                 ]
             }
-        }
+        },
+        "stack": [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Supabase",
+            "PostgreSQL"
+        ]
     },
     "contact": {
         "title": "Let's Talk",
-        "description": "Do you have an idea in mind or are you looking for a technical profile with business vision? I am available for new challenges. Let's connect!",
+        "description": "I'm looking for a junior role in software development or cybersecurity, especially application security. I'm open to on-site or hybrid roles in Seville and remote opportunities across Spain. Let's talk!",
         "copy": "Copy",
         "copied": "Copied!",
         "social": {

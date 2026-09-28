@@ -27,53 +27,24 @@ const ProjectsSection = () => {
 
   const projects: Project[] = [
     {
-      title: t('projects.items.municipal.title'),
-      category: "Full-Stack",
-      summary: t('projects.items.municipal.summary'),
-      description: t('projects.items.municipal.description'),
-      highlights: t('projects.items.municipal.highlights', { returnObjects: true }) as string[],
-      stack: ["Python", "Django", "SQLite", "HTML"],
-      image: "/images/inicio_rede.jpeg",
-      links: [
-        { label: t('projects.card.links'), url: "https://github.com/RIKICARRE/ReDe_TFG" },
-        {
-          label: t('projects.card.publication'),
-          url: "https://www.linkedin.com/posts/ricardo-carreno-939b78338_tfg-ricardo-carre%C3%B1o-mari%C3%B1o-rede-activity-7405162023409385472-htR4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTj9j0BdtL40ztZ-kLvrFl6ZSwcvm1NbhE",
-        },
-      ],
+      title: t('projects.items.jerte.title'),
+      category: t('projects.category'),
+      summary: t('projects.items.jerte.summary'),
+      description: t('projects.items.jerte.description'),
+      highlights: t('projects.items.jerte.highlights', { returnObjects: true }) as string[],
+      stack: t('projects.stack', { returnObjects: true }) as string[],
+      image: "/logo.jpg",
+      links: [{ label: t('projects.card.website'), url: "https://pueblosinteligentes.mvj.es/es" }],
     },
     {
-      title: t('projects.items.mapyourworld.title'),
-      category: "Full-Stack",
-      summary: t('projects.items.mapyourworld.summary'),
-      description: t('projects.items.mapyourworld.description'),
-      highlights: t('projects.items.mapyourworld.highlights', { returnObjects: true }) as string[],
-      stack: ["React", "Spring Boot", "PostgreSQL", "Mapbox"],
-      image: "/images/logo_myw.png",
-      links: [
-        { label: t('projects.card.links'), url: "https://github.com/ISPP-Grupo-7/MapYourWorld" },
-        { label: t('projects.card.landing'), url: "https://mapyourworld.netlify.app/" },
-      ],
-    },
-    {
-      title: t('projects.items.portfolio.title'),
-      category: "Frontend",
-      summary: t('projects.items.portfolio.summary'),
-      description: t('projects.items.portfolio.description'),
-      highlights: t('projects.items.portfolio.highlights', { returnObjects: true }) as string[],
-      stack: ["React", "Vite", "Tailwind", "Framer Motion"],
-      image: "/images/portfolio.png",
-      links: [{ label: t('projects.card.links'), url: "https://github.com/RIKICARRE/portfolio_v2" }],
-    },
-    {
-      title: t('projects.items.remote.title'),
-      category: "Data Science",
-      summary: t('projects.items.remote.summary'),
-      description: t('projects.items.remote.description'),
-      highlights: t('projects.items.remote.highlights', { returnObjects: true }) as string[],
-      stack: ["Python", "MATLAB", "Remote Sensing"],
-      image: "/images/t.png",
-      links: [{ label: t('projects.card.links'), url: "https://github.com/RIKICARRE/Teledeteccion" }],
+      title: t('projects.items.valdehornillos.title'),
+      category: t('projects.category'),
+      summary: t('projects.items.valdehornillos.summary'),
+      description: t('projects.items.valdehornillos.description'),
+      highlights: t('projects.items.valdehornillos.highlights', { returnObjects: true }) as string[],
+      stack: t('projects.stack', { returnObjects: true }) as string[],
+      image: "/logo.jpg",
+      links: [{ label: t('projects.card.website'), url: "https://www.valdehornillosturismo.com/es" }],
     },
   ];
 
@@ -118,7 +89,7 @@ const ProjectsSection = () => {
                     <CardItem translateZ={30} className="w-20">
                       <img
                         src={project.image}
-                        alt={project.title}
+                        alt=""
                         className="h-20 w-20 rounded-2xl object-cover"
                       />
                     </CardItem>
