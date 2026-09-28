@@ -12,6 +12,14 @@ const AboutSection = () => {
 
   const educationTimeline = [
     {
+      period: t('about.timeline.master.period'),
+      title: t('about.timeline.master.title'),
+      institution: t('about.timeline.master.institution'),
+      status: t('about.timeline.master.status'),
+      milestones: t('about.timeline.master.milestones', { returnObjects: true }) as string[],
+      description: t('about.timeline.master.description'),
+    },
+    {
       period: "2021 — 2025",
       title: t('about.timeline.degree.title'),
       institution: t('about.timeline.degree.institution'),
@@ -45,7 +53,7 @@ const AboutSection = () => {
       certified: false,
       description: t('about.courses.aws.description'),
       link: "https://skillbuilder.aws/learn/94T2BEN85A/aws-cloud-practitioner-essentials-espaol-de-espaa/22YKTHGJVW",
-      linkedin: "https://www.linkedin.com/in/ricardo-carreno-939b78338/overlay/1766437097144/single-media-viewer?type=DOCUMENT&profileId=ACoAAFTj9j0BdtL40ztZ-kLvrFl6ZSwcvm1NbhE&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Be8yVZQtFRvC7%2BJZ3DSVBBA%3D%3D",
+      linkedin: "https://www.linkedin.com/in/ricardo-carreno-939b78338/",
     },
     {
       title: t('about.courses.cisco.title'),
@@ -71,14 +79,6 @@ const AboutSection = () => {
       description: t('about.courses.comptia.description'),
       link: "https://www.ciberext.es/cursos.php",
     },
-    {
-      title: t('about.courses.comptiaPrep.title'),
-      provider: t('about.courses.comptiaPrep.provider'),
-      status: t('about.courses.comptiaPrep.status'),
-      certified: false,
-      description: t('about.courses.comptiaPrep.description'),
-      link: "https://www.comptia.org/certifications/security",
-    },
   ];
 
   return (
@@ -91,9 +91,8 @@ const AboutSection = () => {
             </BoxReveal>
             <p className="text-base md:text-lg text-muted-foreground">
               <Trans i18nKey="about.intro">
-                Soy <span className="font-semibold text-foreground">Ricardo Carreño</span>, graduado en Ingeniería del
-                Software. Me enfoco en construir productos digitales seguros, usables y con arquitectura sólida, combinando
-                desarrollo full-stack con una visión clara de negocio y seguridad.
+                Soy <span className="font-semibold text-foreground">Ricardo Carreño Mariño</span>, graduado en Ingeniería
+                Informática del Software por la Universidad de Sevilla. Mi experiencia combina desarrollo web con documentación técnica.
               </Trans>
             </p>
             <div className="space-y-3 text-sm md:text-base text-muted-foreground">

@@ -22,7 +22,7 @@ const Home = () => {
           />
           <h2 className="text-xl md:text-3xl font-semibold mb-4 animate-fade-in [animation-delay:100ms] leading-tight">
             <Trans i18nKey="home.greeting">
-              Soy <AuroraText>Ricardo</AuroraText>, graduado en Ingeniería del Software
+              Soy <AuroraText>Ricardo Carreño Mariño</AuroraText>, ingeniero de software y estudiante de Ciberseguridad
             </Trans>
           </h2>
           <h3 className="text-base md:text-xl font-normal text-muted-foreground max-w-xl animate-fade-in [animation-delay:200ms]">

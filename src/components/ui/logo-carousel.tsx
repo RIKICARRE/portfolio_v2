@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
@@ -43,24 +42,10 @@ export function LogoCarousel({ columns = 2 }: { columns?: number }) {
   // Define logos using public SVGs
   const logos = useMemo<Logo[]>(
     () => [
-      { id: 1, name: "CSS", src: "/svg/CssSVGVectors.svg" },
-      { id: 2, name: "Django", src: "/svg/DjangoSVGIcons.svg" },
-      { id: 3, name: "Docker", src: "/svg/DockerSVGIcons.svg" },
-      { id: 4, name: "Flask", src: "/svg/FlaskLogo.svg" },
-      { id: 5, name: "Github", src: "/svg/github-142-svgrepo-com.svg" },
-      { id: 6, name: "HTML", src: "/svg/HtmlSVGVectors.svg" },
-      { id: 7, name: "SQL", src: "/svg/IconoSVGBasedeDatosSQL.svg" },
-      { id: 8, name: "Java", src: "/svg/JavaSVGVectors.svg" },
-      { id: 9, name: "Javascript", src: "/svg/JavascriptSVGVectors.svg" },
-      { id: 10, name: "Matlab", src: "/svg/MatlabSVGIcon.svg" },
-      { id: 11, name: "Mysql", src: "/svg/mysql-svgrepo-com.svg" },
-      { id: 12, name: "Python", src: "/svg/PythonSVGVectors.svg" },
-      { id: 13, name: "Selenium", src: "/svg/selenium-svgrepo-com.svg" },
-      { id: 14, name: "Sonarqube", src: "/svg/sonarqube-svgrepo-com.svg" },
-      { id: 15, name: "Tailwind", src: "/svg/TailwindSVGIcons.svg" },
-      { id: 16, name: "Typescript", src: "/svg/TypescriptSVGIcon.svg" },
-      { id: 17, name: "React", src: "/svg/react.svg" },
-      { id: 18, name: "Vite", src: "/svg/vite.svg" },
+      { id: 1, name: "SQL", src: "/svg/IconoSVGBasedeDatosSQL.svg" },
+      { id: 2, name: "Tailwind CSS", src: "/svg/TailwindSVGIcons.svg" },
+      { id: 3, name: "TypeScript", src: "/svg/TypescriptSVGIcon.svg" },
+      { id: 4, name: "React", src: "/svg/react.svg" },
     ],
     []
   );

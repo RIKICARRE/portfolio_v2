@@ -1,0 +1,14 @@
+REACTIVE_RESUME_BASE_URL=https://rxresu.me
+REACTIVE_RESUME_API_KEY=replace_me
+REACTIVE_RESUME_EN_SLUG=rikicarre/cv
+REACTIVE_RESUME_ES_SLUG=rikicarre/cv-spanish
+# Optional if your automation/API flow needs explicit IDs instead of slugs:
+# REACTIVE_RESUME_EN_ID=
+# REACTIVE_RESUME_ES_ID=
+
+# Safe LinkedIn source of truth for the automation.
+# Do not scrape LinkedIn directly. Point this to a local export/snapshot that you control.
+# Examples:
+# LINKEDIN_SOURCE_PATH=/absolute/path/to/linkedin-profile-export.json
+# LINKEDIN_SOURCE_PATH=/absolute/path/to/linkedin-profile-notes.md
+LINKEDIN_SOURCE_PATH=
